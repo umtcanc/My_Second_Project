@@ -1,0 +1,10 @@
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35rem;
+  &--center{
+    text-align: center;
+    flex-direction: column;
+  }
+}

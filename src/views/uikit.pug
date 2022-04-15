@@ -1,0 +1,224 @@
+doctype html
+html(lang="tr")
+    head
+
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(href="assets/css/style.css",rel='stylesheet')
+        title Param - UI Kit
+        style.
+            body {
+                background: #adaeb2;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 45px;
+                margin-bottom: 20px;
+                line-height: 2em;
+            }
+
+            .uikith2 {
+                font-weight: bold;
+                font-size: 35px;
+                line-height: 2em;
+                text-align: center;
+                border-top: 2px solid #eee;
+                border-bottom: 2px solid #eee;
+                margin-bottom: 40px;
+            }
+
+            h6 {
+                font-weight: 600;
+                font-size: 25px;
+                margin-bottom: 20px;
+                line-height: 2em;
+            }
+
+            section {
+                padding: 30px 0;
+                margin: 60px 0;
+            }
+
+            div[class^='col'] {
+                margin-bottom: 30px;
+            }
+
+            .font {
+                font-size: 20px;
+            }
+
+            .font p {
+                margin-bottom: 10px;
+            }
+
+            
+
+            .text-center {
+                text-align: center;
+            }
+    body
+        br
+        .container
+            section
+                .row
+                    .col-12
+                        h1.text-center Param UI Kit
+                        br
+                .row
+                    .col-12
+                        h2.uikith2 Cards
+                .row
+                    .col-4 
+                        h6 Card-1 
+                        - var card = "card-1"
+                        include blocks/cards
+                .row        
+                    .col-12 
+                        h6 Card-2
+                        - var card = "card-2"
+                        include blocks/cards
+                .row 
+                    .col-12
+                        h6 Card-3
+                        - var card = "card-3"
+                        include blocks/cards
+                .row
+                    .col-12
+                        h6 Card-4
+                        - var card = "card-4"
+                        include blocks/cards
+                
+                .row 
+                    .col-12 
+                        h2.uikith2 Buttons
+                .row    
+                    .col-3
+                        h6 Button Small Green
+                        a(href="#").btn.btn--small.btn--green Giriş Yap  
+                    .col-3
+                        h6 Button Medium Green
+                        a(href="#").btn.btn--medium.btn--green Giriş Yap 
+                    .col-3
+                        h6 Button Big Green
+                        a(href="#").btn.btn--big.btn--green Hemen Hesap Aç 
+                    .col-3
+                        h6 Button Big Transparent
+                        a(href="#").btn.btn--big.btn--transparent Hemen Hesap Aç                    
+                .row 
+                    .col-12 
+                        h2.uikith2 İnput  Select
+                .row
+                    
+                    .col-4
+                        h6 Gsm Text Box
+                        form.gsmbox(action="")
+                            img(src="assets/img/tr.svg", alt="")
+                            select.select.select--number(name="number" id="number" )
+                                option(value="Tr") +90 
+                                option(value="En") +15  
+                            input.input.input--gsm(type="text" placeholder="GSM NUMARASI")
+                   
+                .row 
+                    .col-12 
+                        h2.uikith2 Başlık Yazı
+                .row
+                    .col-3 
+                        h6 Başlık xxxl 
+                        h2.title.title--xxxl Select Language 
+                    .col-3 
+                        h6 Başlık xxl 
+                        h2.title.title--xxl Select Languae
+                    .col-3 
+                        h6 Başlık xl 
+                        h2.title.title--xl Select Languae
+                    .col-3 
+                        h6 Başlık lg 
+                        h2.title.title--lg Select Languae
+                .row 
+                    .col-3 
+                        h6 Yazı md
+                        h2.title.title--md Select Languae
+                    .col-3 
+                        h6 Yazı sm
+                        h2.title.title--sm Select Languae
+                    .col-3 
+                        h6 Yazı xs
+                        h2.title.title--xs Select Languae
+                    .col-3 
+                        h6 Yazı xxs
+                        h2.title.title--xxs Select Languae
+                .row
+                    .col-3
+                        h6 Yazı xxxs
+                        h2.title.title--xxs Select Languae
+                    .col-3
+                        h6 Altı Çizgili Yazı
+                        a(href="").title.title--sm.title--underlined Hemen Kaydol
+                .row 
+                    .col-12 
+                        h2.uikith2 Components
+                .row 
+                    .col-3
+                        h6 Select Languae
+                        .langs
+                            .langs-menu
+                                .langs-menu__image
+                                    img(src="assets/img/tr.svg", alt="")
+                                span.langs-menu__code TR 
+                            .langs-menu-content
+                                a(href="").langs-menu-content__item
+                                    .langs-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.langs-menu__code TR
+                                a(href="").langs-menu-content__item
+                                    .langs-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.langs-menu__code EN
+                                     
+                    .col-5 
+                        h6 Sosyal Medya İconları
+                        include blocks/components/social
+                            
+
+                    .col-4
+                        h6.uikith6 Dil Seçim
+                        .langs
+                            .langs-menu
+                                .langs-menu__image
+                                    img(src="assets/img/tr.svg", alt="")
+                                span.langs-menu__code TÜRKÇE 
+                            .langs-menu-content
+                                a(href="").langs-menu-content__item
+                                    .langs-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.langs-menu__code TÜRKÇE
+                                a(href="").langs-menu-content__item
+                                    .langs-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.langs-menu__code ENGLİSH
+                row         
+                    .col-12(style="margin-top:15rem;")     
+                        h2.uikith2 Fonts 
+                row 
+                    .col-12 
+                        h6 Mark Pro
+                        p(style="font-size:3rem; font-family:'Mark Pro'") MARK PRO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi 
+                        p(style="font-size:3rem; font-family:'Mark Pro Medium'") MARK PRO MEDİUM:Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi 
+                        p(style="font-size:3rem; font-family:'Mark Pro Bold'") MARK PRO BOLD:Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi 
+                        p(style="font-size:3rem; font-family:'Mark Pro Heavy'") MARK PRO HEAVY: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi 
+
+
+                    
+                            
+
+                            
+                    
+
+
+
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src="/assets/js/all.js")
+

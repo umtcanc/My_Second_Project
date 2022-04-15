@@ -1,0 +1,202 @@
+extends blocks/layout
+block vars
+    - var index = true;
+
+block append head
+    title Homepage - Param
+block content
+    .background-index
+    //- .dbg
+    section.pageintro
+        .container
+            .pageintro-info
+                .pageintro-info-left 
+                    .pageintro-info-left-title.title--xxxl 
+                        span Alışverişte indirim 
+                            br
+                        span yanında param!
+                    .pageintro-info-left-text.title--md 
+                        span 7/24 Para transferi, 50+ işyerinde nakit iade!
+                    .pageintro-info-left-start 
+                        .gsm
+                            .gsm-menu
+                                .gsm-menu__image
+                                    img(src="assets/img/tr.svg", alt="")
+                                span.langs-menu__code +90 
+                            .gsm-menu-content
+                                a(href="").gsm-menu-content__item
+                                    .gsm-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.gsm-menu__code +90
+                                a(href="").gsm-menu-content__item
+                                    .gsm-menu__image 
+                                        img(src="assets/img/tr.svg", alt="") 
+                                        span.gsm-menu__code +55  
+                            input.input.input--gsm(type="text" placeholder="GSM NUMARASI")
+                        a(href="#").btn.btn--medium.btn--green Hemen Başla
+                    .pageintro-info-left-message.title--xxxs 
+                        span Tüm çevrimiçi mağazalarda!
+                    .pageintro-info-left-store 
+                        a(href="") 
+                            img(src="assets/img/appstore-w.svg", alt="")
+                        a(href="")
+                            img(src="assets/img/gp-w.svg", alt="")
+                .pageintro-info-right 
+                    .phone1  
+                    .phone2   
+                        img(src="assets/img/phone2.png", alt="")
+                    .creditcard 
+                        img(src="assets/img/creditcard.png", alt="")
+                        
+    section.pagesecond 
+        .container
+            .pagesecond-marka 
+                .swiper.mySwiper.main-swiper 
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="assets/img/itunes.svg", alt="")
+                        .swiper-slide 
+                            img(src="assets/img/spotify.svg", alt="")
+                        .swiper-slide 
+                            img(src="assets/img/apple-music.svg", alt="")
+                        .swiper-slide 
+                            img(src="assets/img/muud.svg", alt="")
+                        .swiper-slide 
+                            img(src="assets/img/spotify.svg", alt="")
+                        .swiper-slide 
+                            img(src="assets/img/apple-music.svg", alt="")
+                    
+                        
+                    
+            .pagesecond-who
+                .pagesecond-who-title.title--lg 
+                    span Param Kimler İçin?
+                .pagesecond-who-text.title--xxl
+                    span Herkes için bir şeyler var, paramla mutluluk var! 
+                .swiper.whoswiper
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            - var card = "card-1"
+                            include blocks/cards
+                        .swiper-slide
+                            include blocks/cards
+                        .swiper-slide  
+                            include blocks/cards
+                        .swiper-slide
+                            include blocks/cards
+                    .swiper-pagination.pagination
+            .pagesecond-accordion 
+                include blocks/accordion
+            //- .pagesecond-benefits
+            //-     .pagesecond-benefits-left 
+            //-         img(src="assets/img/Image9.png", alt="") 
+            //-     .pagesecond-benefits-right                
+            //-         .pagesecond-benefits-right-title.title--lg 
+            //-             span Param'ın faydaları nelerdir?
+            //-         .pagesecond-benefits-right-text.title--xxl 
+            //-             span Her ihtiyacınızı karşılayan bir hesap düşünün!
+            //-         .pagesecond-benefits-right-send
+            //-             .pagesecond-benefits-right-send-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-send-content 
+            //-                 .pagesecond-benefits-right-send-content-title
+            //-                     span.title--lg  Kartların Arası Para Gönder 
+            //-                 .pagesecond-benefits-right-send-content-text
+            //-                     span.title--xs Anlaşmalı bankalarımızla 7/24 Transfer yap!
+            //-         .pagesecond-benefits-right-send-bar 
+            //-             .pagesecond-benefits-right-send-bar-ilerleme
+            //-         .pagesecond-benefits-right-item 
+            //-             .pagesecond-benefits-right-item-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-item-content.title--md 
+            //-                 span Sanal Kart ile Alışveriş
+            //-         .pagesecond-benefits-right-item 
+            //-             .pagesecond-benefits-right-item-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-item-content.title--md 
+            //-                 span Otomatik TL Yükle
+            //-         .pagesecond-benefits-right-item 
+            //-             .pagesecond-benefits-right-item-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-item-content.title--md 
+            //-                 span Faturalarını Öde
+            //-         .pagesecond-benefits-right-item 
+            //-             .pagesecond-benefits-right-item-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-item-content.title--md 
+            //-                 span Kadekod ile Öde
+            //-         .pagesecond-benefits-right-item.none-border
+            //-             .pagesecond-benefits-right-item-image
+            //-                 .card-1-image
+            //-             .pagesecond-benefits-right-item-content.title--md 
+            //-                 span Harcadıkça Kazan
+            .pagesecond-banner 
+                - var card = "card-2"
+                include blocks/cards
+            .pagesecond-slider  
+                .pagesecond-slider-title 
+                    span.title--lg Param ile Avantajlar
+                .pagesecond-slider-text 
+                    span.title--xl 7/24 Para transferi, 50+ işyerinde nakit iade!  
+                    .slider-navigation-icon 
+                        .card-slider-prev
+                            svg.icon.icon-font
+                                use(xlink:href='assets/icons/icons.svg#arrow')
+                        .card-slider-next
+                            svg.icon.icon-font
+                                use(xlink:href='assets/icons/icons.svg#arrow-next')
+                        
+                .swiper.mySwiper.card-swiper 
+                    
+                    .swiper-wrapper
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                    .swiper-pagination.pagination            
+            .pagesecond-cards 
+                - var card = "card-3"
+                include blocks/cards 
+                - var card = "card-4"
+                include blocks/cards      
+    section.pagethird 
+        .container
+            .pagethird-footer
+                .pagethird-footer-image 
+                    img(src="assets/img/kadin.png", alt="")  
+                .pagethird-footer-content
+                    .pagethird-footer-content-title 
+                        span.title--xl Param Uygulamamızı Deneyin
+                    .pagethird-footer-content-text
+                        span.title--xxl Uygulamamızı indir param ailesine katıl!
+                    .pagethird-footer-content-store 
+                        a(href="") 
+                            img(src="assets/img/appstore-b.svg", alt="")
+                        a(href="")
+                            img(src="assets/img/Google_Play.svg", alt="" style='width:18rem')
+    
+
+             
+       
+     
+
+
+
+

@@ -1,0 +1,126 @@
+  
+.langs {
+  position: relative;
+  width: max-content;
+  z-index: 9;
+  margin-left: -1.3rem;
+
+  &-menu {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    padding: 1.3rem 2.7rem 1.3rem 1.3rem;
+    font-family: 'Mark Pro';
+    font-weight: 400;
+    font-size: 1.5rem;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      border: 7px solid transparent;
+      border-top-color: #FFF;
+      transition: $transition;
+      transform: translateY(3px);
+      border-radius: 3px;
+    }
+
+    &:hover, &.active {
+      .header-langs {
+        &-menu {
+          &::after {
+            border-top-color: red;
+
+          }
+
+          &__code {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.active {
+      &::after{
+        transform: translateY(-4px) rotate(-180deg);
+      }
+      & + .langs-menu-content {
+        transform: translateY(0) translateZ(0) translateX(-50%) scale(1, 1);
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &__img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 1.2rem;
+
+      img {
+        object-fit: cover;
+        height: inherit;
+        width: 100%;
+      }
+    }
+
+    &__code {
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 1;
+      font-weight: medium;
+      font-size: 2rem;
+      transition: $transition;
+      margin-left: 1rem;
+      @include bp(mobile){
+        font-size: 1.5rem;
+      }
+    }
+
+    &-content {
+      background: #270F4D;
+      border-radius: 1rem;
+      padding: 2rem 1rem;
+      top: calc(100% + 1rem);
+      position: absolute;
+      width: 100%;
+      box-shadow: 0 2px 2px rgba(#fff,.2);
+      transform: translateY(20px) translateX(-50%);
+      left: 55%;
+      transition: $transition;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 3;
+      font-family: 'Mark Pro';
+      font-size: 1.6rem;
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem;
+        justify-content: flex-start;
+        border-radius: 1rem;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover, &.active{
+          background: rgba(#f0f0f0,.4);
+          
+        }
+        & + & {
+          margin-top: 5px;
+        }
+        .langs-menu__image{
+          display: flex;
+            align-items: center;
+        }
+
+        .langs-menu {
+          &__img {
+            flex-shrink: 0;
+            
+          }
+        }
+      }
+    }
+  }
+}

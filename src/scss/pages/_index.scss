@@ -1,0 +1,708 @@
+
+.pageintro{
+    background:#270F4D;
+    border-radius: 0 0 5rem 5rem;
+    background-image: linear-gradient(180deg, #270F4D 0%, #270F4DEF 24%, #270F4D14 100%, #F6F6FB00 100%), url(../img/arkaplan.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+    @include bp(tablet-big){
+        height: 122vh;
+        border-radius: 0%;
+        background-image: none;
+    } 
+    @include bp(mobile){
+        border-radius: 0%;
+        height: 112vh;
+        background-image: none;
+    } 
+    &-info{
+        padding-top: 33rem; 
+        display: flex;
+        position: relative;
+
+        @include bp(tablet-big){
+           flex-direction: column;
+           padding-top: 28.2rem;
+        }
+        @include bp(mobile){
+            flex-direction: column;
+            padding-top: 10.2rem;
+            
+            
+        }
+        &-left{
+            width: 40%;
+            @include bp(tablet-big){
+                width: 100%;
+                
+            }
+            @include bp(mobile){
+                width: 100%;
+                
+            }
+            &-title{
+                font-family: 'Mark Pro Heavy';
+                line-height: 7rem;
+                color: #fff;
+                margin-bottom: 2.8rem;  
+                @include bp(mobile){
+                    font-size: 2.8rem;
+                    line-height: 3rem;
+                    text-align: center;
+                }
+                span{
+                    &:nth-child(2){
+                        color: #00B7B3;
+                    }
+                }
+            }
+            &-text{
+                color: white;
+                opacity: .6;
+                margin-bottom: 6rem;
+                @include bp(mobile){
+                    font-size: 1.8rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+            }
+            &-start{
+                display: flex;
+                align-items: center;
+                margin-bottom: 3.3rem;
+                @include bp(mobile){
+                    width: 100%;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+                
+            }
+            &-message{
+                color: white;
+                opacity: .6;
+                @include bp(mobile){
+                    width: 40%;
+                    text-align: center;
+                }
+            }
+            
+            &-store{
+                margin-top: 5.5rem;
+                margin-bottom: 14rem;
+                @include bp(tablet-big){
+                   text-align: center;
+                }
+                @include bp(mobile){
+                    margin-bottom: 0;
+                }
+                
+                a{
+                    width: auto;
+                    height: auto;
+                    background-color: rgba($color: #1B0A38, $alpha: .8);
+                    color: #fff;
+                    border-radius: 2rem;
+                    margin-right: 3rem;
+                    padding: 2rem;
+                   
+                    @include bp(mobile){
+                        position: relative;
+                        &:nth-child(1){
+                            top:-8.5rem;
+                            right: -8rem;
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                    img{
+                        opacity: 1;
+                    }
+                    &:hover{
+                        background-color: rgba($color: #1B0A38, $alpha: 1);
+                    }
+                }
+                
+            }
+        }
+        &-right{
+            width: 60%;
+            display: flex;
+            position: relative;
+            @include bp(tablet-big){
+                width: 100%;
+            }
+        
+            @include bp(mobile){
+                height: 38rem;
+            }
+            .phone1{
+                background-image: url(../img/phone1.png);
+                background-repeat: no-repeat;
+                background-position: 0 6rem;
+                transform: scale(.9);
+                width: 54rem;
+                height: 65rem;
+                position: absolute;
+                top: -15%;
+                left: 8rem;
+                
+                // box-shadow: -20px -18px 10px 10px #370865 inset;
+                
+                @include bp(tablet-big){
+                    position: absolute;
+                    background-size: 40rem;
+                    left: -10%;
+                    background-position: 0 7rem;
+                }
+                @include bp(mobile){
+                    position: absolute;
+                    left: -10rem;
+                    margin-top: -31.8rem;
+                    height: 65rem;
+                    width: 35.9rem;
+                    background-position: 7rem 40rem;
+                }
+            }
+            .phone2{
+                position: absolute;
+                right: 13%;
+                top: -28%;
+                
+                
+                @include bp(tablet-big){
+                    left: 7rem;
+                    top: -18rem;
+                }
+                @include bp(mobile){
+                    left: -2rem;
+                    top: -28rem;
+                }
+                img{
+                    transform: scale(.9);
+                    @include bp(tablet-big){
+                        transform: scale(.9);
+                    }
+                    @include bp(mobile){
+                        transform: scale(.5);
+                    }
+                }
+            }
+            .creditcard{
+                position: absolute;
+                left: auto;
+                right: -5%;
+               
+                @include bp(tablet-big){
+                    right: -1rem;
+                    transform: scale(.9);
+                    margin-top: -2rem;
+                }
+                @include bp(mobile){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+    
+.pagesecond{
+    padding-top: 20rem;
+   
+    height: auto;
+    @include bp(mobile){
+        background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF95 22%, #FFFFFF 55%, #FFFFFF 89%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        padding-top: 10rem;
+    }
+    &-marka{
+        width: 100%;
+        margin-bottom: 20rem;
+        padding-bottom: 10rem;
+        border-bottom: 1px solid rgba($color: gray, $alpha: .2);
+        @include bp(tablet-big){
+            margin-top: 8rem;
+            margin-bottom: 10rem;
+        }
+         
+        .swiper{
+            &-slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+    &-who{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70rem;
+        @include bp(tablet-big){
+            align-items: baseline;
+        }
+        @include bp(mobile){
+            align-items: baseline;
+        }
+        
+        &-title{
+            margin-bottom: 1.4rem;
+            span{
+                font-family: 'Mark Pro Bold';
+                color: #450E87;
+                @include bp(mobile){
+                    margin-left: 3.6rem;
+                }
+            }
+        }
+        &-text{
+            margin-bottom: 6.6rem;
+            @include bp(tablet-big){
+                width: 80%;
+            }
+            @include bp(mobile){
+                margin-left: 3.6rem;
+            }
+            span{
+                color: #7D8E9F;
+                @include bp(mobile){
+                    font-size: 2.2rem;
+                }
+            }
+        }
+       .whoswiper{
+           width: 100% !important;
+           height: 100%;
+            .swiper-slide{
+                margin: 0;
+                padding: 0;
+                @include bp(mobile){
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-right: 4rem;
+                }
+                .card-1{
+                    width: auto;
+                    height: auto;
+                    padding-bottom: 9rem;
+                    padding-top: 7rem;
+                    @include bp(mobile){
+                        width: 30rem;
+                        padding: 3rem;
+                        height: 35rem;
+                    }
+                }
+            }
+            .swiper-pagination-bullet {
+                width: 1rem;
+                height: 1rem;
+                background: #DDDAE2;
+                opacity: .5;
+              }
+              .swiper-pagination-bullet-active {
+                background: #450E87;
+                opacity: 1;
+              }
+            .pagination{
+                position: relative;
+                margin-top: 5rem;
+                display: none;
+                @include bp(tablet-big){
+                    display: flex;
+                }
+                @include bp(mobile){
+                    display: flex;
+                }
+            }
+        } 
+    }
+    &-benefits{
+        display: flex;
+        margin-top: 17rem;
+        justify-content: center;
+        &-left{
+            margin-right: 10rem;
+            display: flex;
+            align-items: center;
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: #F6F6FB;
+                width: 37rem;
+                height: 44rem;
+                border-radius: 4.6rem;
+                margin-left: -8rem;
+                z-index: -1;
+            }
+            
+        }
+        &-right{
+            margin-top: 5rem;
+            &-title{
+                span{
+                    font-family: 'Mark Pro Bold';
+                    color: #450E87;
+                }
+            }
+            &-text{
+                width: 65%;
+                span{
+                    color: #7D8E9F;
+                }
+            }
+            &-send{
+                display: flex;
+                align-items: center;
+                margin-top: 10rem;
+                &-image{
+                    .card-1-image{
+                        background-image: url(../img/card.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 4rem;
+                        height: 3rem;
+                        transform: scale(1.5)
+                    }
+                }
+                &-content{
+                    margin-left: 2.5rem;
+                    &-title{
+                        span{
+                            color: #3D2852;
+                            font-family: 'Mark Pro Bold';
+                        }
+                    }
+                    &-text{
+                        span{
+                            color:#7D8E9F;
+                            opacity: .8;
+                        }
+                    }
+                }
+                &-bar{
+                    width: 100%;
+                    border-radius: .5rem;
+                    height: .7rem;
+                    background-color: #ccc;
+                    &-ilerleme{
+                        background-color: #00B7B3;
+                        width: 40%;
+                        border-radius: .5rem;
+                        height: .7rem;
+                    }
+                }
+            }
+            
+            &-item{
+                display: flex;
+                align-items: center;
+                padding-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                border-bottom: 1px solid rgba($color: gray, $alpha: .2);
+                &-image{
+                    .card-1-image{
+                        background-image: url(../img/card.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 4rem;
+                        height: 3rem;
+                        opacity: .5;
+                    }
+                }
+                
+                &-content{
+                    span{
+                        font-family: 'Mark Pro Medium';
+                        color: #7D8E9F;
+                        margin-left: 2.5rem;
+                    }
+                }
+            }
+        }
+        .none-border{
+            border:none;
+        }
+
+    }
+    &-banner{
+        margin: 25rem 0;
+        display: flex;
+        justify-content: center;
+        @include bp(mobile){
+            border-top: 1px solid rgba($color: #1B0A38, $alpha: .1);
+            padding-top: 15rem;
+            margin-bottom: 10rem;
+            margin-top: 15rem;
+            .card-2{
+                .card-2-left-banner{
+                    a{
+                        margin-left: -2rem;
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+    &-slider{
+        @include bp(mobile){
+            margin-left: 3.6rem;
+        }
+        &-title{
+            padding-bottom: 2rem;
+            span{
+                color: #450E87;
+                font-family: 'Mark Pro Bold';
+                @include bp(mobile){
+                    font-size: 2rem;
+                }
+            }
+        }
+        &-text{
+            padding-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            .slider-navigation-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include bp(mobile){
+                    display: none;
+                }
+                .card-slider-prev{
+                    margin-right: 3.3rem;
+                }
+                svg{
+                    cursor: pointer;
+                    opacity: .4;
+                    transition: .5s;
+                    height: 2rem;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            span{
+                color: #7D8E9F;
+                @include bp(mobile){
+                    font-size: 2.2rem;
+                    width: 80%;
+                }
+            }
+        }
+        .card-swiper{
+            .swiper-pagination-bullet {
+                width: 1rem;
+                height: 1rem;
+                background: #DDDAE2;
+                opacity: .5;
+              }
+              .swiper-pagination-bullet-active {
+                background: #450E87;
+                opacity: 1;
+              }
+            .pagination{
+                position: relative;
+                margin-top: 5rem;
+                display: none;
+                @include bp(mobile){
+                    display: flex;
+                }
+            }
+            &-item{
+                opacity: .85;
+                transition: .3s;
+                &:hover{
+                    opacity: 1;
+                }
+                @include bp(tablet-big){
+                    opacity: 1;
+                }
+                &-image{
+                    img{
+                        border-radius: 4rem;
+                        width: 100%;
+                        height: 30rem;
+                        @include bp(mobile){
+                            width: 30.2rem;
+                            height: 19.3rem;
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+                &-title{
+                    padding-top: 3rem;
+                    span{
+                        font-family: 'Mark Pro Bold';
+                        color: #3D2852;
+                    }
+                }
+                &-text{
+                    padding-top: 1.3rem;
+                    span{
+                        color: #7D8E9F;
+                        opacity: .8;
+                    }
+                }
+                
+            }
+        }
+    }
+    &-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15rem;
+        margin-bottom: -15rem;
+        @include bp(tablet-big){
+            flex-direction: column;
+            
+        }
+        @include bp(mobile){
+            flex-direction: column;
+            margin-top: 9rem;
+        }
+        .card-3{
+            
+            background: transparent linear-gradient(58deg, #370865 0%, #450E87 100%) 0% 0% no-repeat padding-box;
+            @include bp(tablet-big){
+                margin-bottom: 2rem;
+            }
+            @include bp(mobile){
+                margin-bottom: 0;
+            }
+        }
+        .card-4{
+            background: transparent linear-gradient(296deg, #00B7B3 0%, #0E8F93 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    
+}
+
+
+.pagethird{
+    background-color: #F6F6FB;
+    width: auto;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+
+   &-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24rem;
+    padding-bottom: 6.5rem;
+    &-image{
+        width: 33rem;
+        height: 33rem;
+        @include bp(mobile){
+            display: none;
+        }
+    }
+    &-content{
+        padding-left: 5.5rem;
+        @include bp(mobile){
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-title{
+            color: #450E87;
+            padding-bottom: 2rem;
+            
+            @include bp(mobile){
+                text-align: center;
+            }
+            span{
+                font-family: 'Mark Pro Bold';
+                @include bp(mobile){
+                    font-size: 2rem;
+                }
+            }
+        }
+        &-text{
+            color: #7D8E9F;
+            padding-bottom: 5.3rem;
+            @include bp(tablet-big){
+                padding-bottom: 2rem;
+            }
+            @include bp(mobile){
+                text-align: center;
+                padding-left: 3.5rem;
+                padding-right: 3.5rem;
+                
+            }
+            span{
+                @include bp(mobile){
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        &-store{
+            display: flex;
+            @include bp(tablet-big){
+                display: flex;
+                flex-direction: column;
+            }
+            @include bp(mobile){
+                text-align: center;
+            }
+            a{  
+                background-color: #fff;
+                border-radius: 1.4rem;
+                margin-right: 3rem;
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                width: 25rem;
+                @include bp(tablet-big){
+                    padding: 2.5rem;
+                    width: 25rem;
+                    margin-bottom: 2rem;
+                }
+                @include bp(mobile){
+                    margin-right: 0;
+                    padding: 2rem;
+                    }
+                
+                img{
+                    opacity: 1;
+                }
+                &:hover{
+                    filter:brightness(.9);
+                }
+                
+                
+            }
+        }
+    }
+    }     
+}
+
+.myProgress {
+    width: 100%;
+    height: .5rem;
+    background-color: rgba($color: gray, $alpha: .2);
+    border-radius: 2rem;
+  }
+  
+.myBar {
+    height: .5rem;
+    background-color: #00B7B3;
+    animation: animationBar 10s;
+  }

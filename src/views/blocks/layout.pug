@@ -1,0 +1,367 @@
+doctype html
+html(lang="tr")
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(http-equiv='X-UA-Compatible', content='IE=edge')
+            meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+            link(rel='icon' type='image/png' sizes='16x16' href='assets/img/group266.png')
+        block styles
+            link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css",rel='stylesheet')
+            link(href="assets/css/style.css",rel='stylesheet')
+
+
+    body
+        block vars
+
+
+        block header
+            header.header
+                .container
+                    navbar.navbar 
+                        .navbar-left 
+                            .dropdown 
+                                button.dropdown-btn.title--xs.js-open-sub-menu Bireysel
+                                .dropdown-content
+                                    .dropdown-content-top 
+                                        .dropdown-content-top-left 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Kartlar
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Ödeme Yap 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Hızlı Kredi 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Param Mobil 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                        .dropdown-content-top-right
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Ödeme Al
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Transfer Yap 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Param Güvende 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama
+                                    .dropdown-content-banner 
+                                        .dropdown-content-banner-left 
+                                            a(href="#") Kampanyalar 
+                                            a(href="#") Hakkımızda 
+                                        .dropdown-content-banner-right 
+                                            a(href="#") Oranlar ve Ücretler
+                                            a(href="#") Destek   
+                            .dropdown 
+                                button.dropdown-btn.title--xs.js-open-sub-menu  Kurumsal
+                                .dropdown-content
+                                    .dropdown-content-top 
+                                        .dropdown-content-top-left 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Kartlar 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Kartlar 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama 
+                                        .dropdown-content-top-right
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Kartlar 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama
+                                            a(href="").dropdown-content-item 
+                                                .dropdown-content-item-image 
+                                                .dropdown-content-item-content  
+                                                    .dropdown-content-item-content-title.title--xs Kartlar 
+                                                    .dropdown-content-item-content-text.title--xxs Kısa Bir Açıklama
+                                    .dropdown-content-banner 
+                                        .dropdown-content-banner-left 
+                                            a(href="#") Kampanyalar 
+                                            a(href="#") Hakkımızda 
+                                        .dropdown-content-banner-right 
+                                            a(href="#") Oranlar ve Ücretler
+                                            a(href="#") Destek
+                                
+                        .navbar-right 
+                            .navbar-right-links.title--xxs 
+                                a(href="") Kampanyalar 
+                                a(href="") Hakkımızda
+                                a(href="") Oranlar ve Ücretler
+                                a(href="") Destek
+                            .navbar-right-langs
+                                .langs
+                                    .langs-menu
+                                        .langs-menu__image
+                                            img(src="assets/img/tr.svg", alt="")
+                                        span.langs-menu__code TR 
+                                    .langs-menu-content
+                                        a(href="").langs-menu-content__item
+                                            .langs-menu__image 
+                                                img(src="assets/img/tr.svg", alt="") 
+                                                span.langs-menu__code TR
+                                        a(href="").langs-menu-content__item
+                                            .langs-menu__image 
+                                                img(src="assets/img/tr.svg", alt="") 
+                                                span.langs-menu__code EN
+                    .header-banner 
+                        .header-banner-logo 
+                            a(href="index.html")
+                                img(src="assets/img/3260.svg", alt="") 
+                        .header-banner-login 
+                            a(href="").title.title--sm.title--underlined Hemen Kaydol
+                            a(href="#").btn.btn--small.btn--green Giriş Yap    
+                        .header-banner-language  
+                            .langs
+                                .langs-menu
+                                    .langs-menu__image
+                                        img(src="assets/img/tr.svg", alt="")
+                                    span.langs-menu__code TR 
+                                .langs-menu-content
+                                    a(href="").langs-menu-content__item
+                                        .langs-menu__image 
+                                            img(src="assets/img/tr.svg", alt="") 
+                                            span.langs-menu__code TR
+                                    a(href="").langs-menu-content__item
+                                        .langs-menu__image 
+                                            img(src="assets/img/tr.svg", alt="") 
+                                            span.langs-menu__code EN   
+                        .header-banner-menu__button.js-open-menu
+                        .header-banner-menu
+                            .tab
+                                .tab-button
+                                    button.tablinks.active(data-target="Bireysel") Bireysel 
+                                    button.tablinks(data-target="Kurumsal") Kurumsal
+                                .tab-lang
+                                    .langs
+                                        .langs-menu
+                                            .langs-menu__image
+                                                img(src="assets/img/tr.svg", alt="")
+                                            span.langs-menu__code TR 
+                                        .langs-menu-content
+                                            a(href="").langs-menu-content__item
+                                                .langs-menu__image 
+                                                    img(src="assets/img/tr.svg", alt="") 
+                                                    span.langs-menu__code TR
+                                            a(href="").langs-menu-content__item
+                                                .langs-menu__image 
+                                                    img(src="assets/img/tr.svg", alt="") 
+                                                    span.langs-menu__code EN
+                            .tabcontent(id="Bireysel")
+                                .tabcontent-button
+                                    button.btn.btn--big İnternet Şubesi
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama 
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                .tabcontent-footer
+                                    .tabcontent-footer-left 
+                                        a(href="#") Kampanyalar 
+                                        a(href="#") Hakkımızda 
+                                    .tabcontent-footer-right 
+                                        a(href="#") Oranlar ve Ücretler
+                                        a(href="#") Destek
+                            .tabcontent(id="Kurumsal")
+                                .tabcontent-button
+                                    button.btn.btn--big İnternet Şubesi
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama 
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                a(href="").tabcontent-item 
+                                    .tabcontent-item-image 
+                                    .tabcontent-item-content  
+                                        .tabcontent-item-content-title.title--xs Kartlar 
+                                        .tabcontent-item-content-text.title--xxs Kısa Bir Açıklama
+                                .tabcontent-footer
+                                    .tabcontent-footer-left 
+                                        a(href="#") Kampanyalar 
+                                        a(href="#") Hakkımızda 
+                                    .tabcontent-footer-right 
+                                        a(href="#") Oranlar ve Ücretler
+                                        a(href="#") Destek
+
+
+        // İçerik Başlangıç
+        block content
+
+
+
+        // İçerik Bitiş
+        block footer
+            footer.footer
+                .container
+                    .footer-header
+                        .footer-header-logo 
+                            img(src="assets/img/3260.svg", alt="")
+                        .footer-header-social 
+                            .social
+                                a.social__item.instagram(href='#0')
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-instagram')
+                                a.social__item.facebook(href='#0')
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-facebook')
+                                a.social__item.twitter(href='#0')
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-twitter') 
+                                a.social__item.linledin.active(href='#0')
+                                    svg.icon.icon-font
+                                        use(xlink:href='assets/icons/icons.svg#icon-linkedin')
+                    .footer-intro 
+                        .footer-intro-iletisim 
+                            .footer-intro-iletisim-langs.title  
+                                .langs
+                                    .langs-menu
+                                        .langs-menu__image
+                                            img(src="assets/img/tr.svg", alt="")
+                                        span.langs-menu__code TÜRKÇE 
+                                    .langs-menu-content
+                                        a(href="").langs-menu-content__item 
+                                            .langs-menu__image 
+                                                img(src="assets/img/tr.svg", alt="") 
+                                                span.langs-menu__code TÜRKÇE
+                                        a(href="").langs-menu-content__item
+                                            .langs-menu__image 
+                                                img(src="assets/img/tr.svg", alt="") 
+                                                span.langs-menu__code ENGLİSH
+                            .footer-intro-iletisim-phone 
+                                h2.title.title--xs Müşteri Hizmetleri 
+                                a(href="tel:").title--xxl 
+                                    h3 0850 311 77 01
+                            .footer-intro-iletisim-mail 
+                                h2.title.title--xs E-Mail 
+                                a(href="mailto:umutcan.coskun@pixelate.com.tr") 
+                                    h3.title--xxl info@param.com
+                        .footer-intro-customer 
+                            .footer-intro-customer-person 
+                                ul 
+                                    h2.title.title--lg Bireysel
+                                    li 
+                                        a(href="") Kartlar 
+                                    li 
+                                        a(href="") Ödeme Al
+                                    li 
+                                        a(href="") Ödeme Yap
+                                    li 
+                                        a(href="") Transfer Yap
+                                    li 
+                                        a(href="") Hızlı Kredi 
+                                    li 
+                                        a(href="") Param Güvende
+                                    li 
+                                        a(href="") Param Mobil
+                            .footer-intro-customer-bussines 
+                                ul  
+                                    h2.title.title--lg Kurumsal
+                                    li 
+                                        a(href="") Kartlar 
+                                    li 
+                                        a(href="") Ödeme Al
+                                    li 
+                                        a(href="") Ödeme Yap
+                                    li 
+                                        a(href="") Transfer Yap
+                                    li 
+                                        a(href="") Hızlı Kredi 
+                                    li 
+                                        a(href="") Param Güvende
+                                    li 
+                                        a(href="") Param Mobil
+                                    li 
+                                        a(href="") Param Üyesi
+                                    li 
+                                        a(href="") Geliştirici
+                        .footer-intro-kampanya 
+                            a(href="").title.title--lg Kampanyalar
+                            a(href="").title.title--lg Hakkımızda
+                            a(href="").title.title--lg Oranlar ve Ücretler  
+                            a(href="").title.title--lg Destek
+                    .footer-banner 
+                        .footer-banner-top 
+                            a(href="").title.title--xxs Gizlilik Politikası
+                            a(href="").title.title--xxs Kişisel Verilerin Korunması
+                            a(href="").title.title--xxs Güvenlik Bilgisi
+                            a(href="").title.title--xxs Bilgi Toplum Merkezi 
+                            a(href="").title.title--xxs Faaliyet İzni
+                            a(href="").title.title--xxs Çerçeve Sözleşme 
+                        .footer-banner-footer 
+                            .footer-banner-footer-left
+                                .footer-banner-footer-left-image
+                                    img(src="assets/img/g10.svg", alt="")
+                                    img(src="assets/img/g11.svg", alt="")
+                                .footer-banner-footer-left-title 
+                                    span.title--xxxs PARAM,  TURK Elektronik Para A.Ş. markasıdır
+                                    br 
+                                    span.title--xxxs TURK Elektronik Para A.Ş., Turuncu Holding A.Ş. iştirakidir. ©2020
+                            .footer-banner-footer-right
+                                h2.title.title--xs Made by Pixelate Creative Studio
+                        
+
+
+
+
+
+
+        block scripts
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+            script(src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
+            script(src="assets/js/all.js")
+
+

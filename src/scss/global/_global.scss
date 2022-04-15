@@ -1,0 +1,99 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  &.scroll-disabled{
+    height: 100vh;
+    overflow: hidden  }
+}
+body {
+  font-family: $font-family-base;
+  font-size: 1.6rem;
+  background-color: #FFFFFF;
+
+  color: $color-text;
+  font-weight: normal;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+
+}
+
+
+html {
+  font-size: 9px;
+  @include bp(desktop-m) {
+    font-size: 8px;
+  }
+  @include bp(laptop) {
+    font-size: 7px;
+  }
+  @include bp(tablet) {
+    font-size: 10px;
+  }
+}
+
+
+
+
+.container {
+  max-width: var(--container-width);
+}
+
+a{
+  text-decoration: none;
+}
+swiper-wrapper.visible-active {
+  overflow: visible;
+
+  .swiper-slide {
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+    a{
+      width: 100%;
+      display: block;
+      img{
+        border-radius: 27px;
+        width: 100%;
+      }
+      &:hover{
+        .topfooter-title{
+          h6{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transition: .3s;
+      transform: translateZ(0) scale(1.0, 1.0);
+      pointer-events: all;
+    }
+  }
+}
+@keyframes animationBar{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+// .dbg {
+//   position: fixed;
+//   z-index: 9999999999999;
+//   right: 0;
+//   top: 0;
+//   padding: 1rem;
+//   border: 2px solid red;
+//   background: #fff;
+// }
+
+.swiper-wrapper{
+  @include bp(mobile){
+    transform: translate3d(0px,0,0) !important;
+  }
+}

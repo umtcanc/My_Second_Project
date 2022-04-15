@@ -1,0 +1,336 @@
+
+
+.card-1{
+    cursor: pointer;
+    height: 44.3rem;
+    background: rgba($color: #F6F6FB, $alpha: .4);
+    border:1px solid #ABA3B7;
+    border-radius: 3.2rem;
+    transition: .7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    @include bp(mobile){
+        width: 30rem;
+    }
+    &-image{
+        position: relative;
+        width: 8.7rem;
+        height: 8.7rem;
+        padding-bottom: 6.8rem;
+        margin-left: -1rem  ;
+        @include bp(mobile){
+            padding-bottom: 3rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-title{
+        color: #3D2852;
+        margin-bottom: 2.4rem;
+    }
+    &-text{
+        color: #7D8E9F;
+        opacity: .8;
+    }
+    &:hover{
+        background-color: #FBFBFD;
+        border: 1px solid #450E87;
+        opacity: 1;
+        box-shadow:0 1rem 3rem -1rem rgba(69, 14, 135, .5);
+    }
+}
+
+.card-2{
+    width: 164.2rem;
+    height: 61.7rem;
+    opacity: 1;
+    background-color: #370865;
+    background-image: url(../img/Group266.png);
+    background-size: 73rem;
+    background-repeat: no-repeat;
+    background-position: 5rem 2rem;
+    border-radius: 4.6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include bp(tablet-big){
+        width: 95%;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 2.5rem;
+        background-size: 55rem;
+        background-position: 5rem 15rem;
+    }
+    @include bp(mobile){
+        width: 34.4rem;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 2.5rem;
+        background-size: 35rem;
+        background-position: 1rem 25rem;
+    }
+    
+    &-left{
+        width: 50%;
+        padding-top: 12rem;
+        padding-left: 10rem;
+        @include bp(tablet-big){
+            width: 100%;
+            padding: 0;
+        }
+        @include bp(mobile){
+            width: 100%;
+            padding: 0;
+        }
+        
+        
+        &-title{
+            font-family:'Mark Pro Bold';
+            opacity:1;
+            padding-bottom: 5.6rem;
+            z-index: 1000;
+            @include bp(tablet-big){
+                width: 77%;
+                padding-bottom: 3.5rem;
+            }
+            @include bp(mobile){
+                width: 77%;
+                padding-bottom: 3.5rem;
+            }
+            span{
+                color: #FFFFFF;
+                &:nth-child(2){
+                    color: #00B7B3;
+                }
+            }
+        }
+        &-text{
+            font-family: 'Mark Pro';
+            color: white;
+            opacity: .8;
+            line-height: 4.4rem;
+            padding-bottom: 9rem;
+            width: 85%;
+            @include bp(tablet-big){
+                font-size: 2rem;
+                line-height: 2.9rem;
+                padding-bottom: 4.6rem;
+            }
+            @include bp(mobile){
+                font-size: 2rem;
+                line-height: 2.9rem;
+                padding-bottom: 4.6rem;
+            }
+        }
+        &-banner{
+            display: flex;
+            align-items: center;
+            @include bp(tablet-big){
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            @include bp(mobile){
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            
+            &-text{
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                @include bp(tablet-big){
+                    margin-left: -4rem;
+                    padding-top: 2.5rem;
+                    padding-bottom: 4rem;
+                }
+                @include bp(mobile){
+                    margin-left: -4rem;
+                    padding-top: 2.5rem;
+                    padding-bottom: 4rem;
+                }
+               
+                
+                p{
+                    padding-left: 1.5rem;
+                    color: #FFFFFF;
+                }
+            }
+            
+        }
+    }
+    &-right{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include bp(tablet-big){
+            width: 100%;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+        }
+        @include bp(mobile){
+            width: 100%;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+        }
+        img{
+            margin-right: 5rem;
+            height: 68rem;
+            margin-top: -3.5rem;
+            @include bp(tablet-big){
+                width: 27.7rem;
+                height: 29.4rem;
+                margin-right: 0;
+                margin-top: -9.5rem;
+                
+            }
+            @include bp(mobile){
+                width: 24.7rem;
+                height: 26.4rem;
+                margin-right: 0;
+                margin-top: -9.5rem;
+                
+            }
+        }
+    }
+}
+.card-3{
+    width: 81.2rem;
+    height: 38rem;
+    background: transparent linear-gradient(58deg, #370865 0%, #450E87 100%) 0% 0% no-repeat padding-box;
+    overflow: hidden;
+    border-radius: 3.2rem;
+    display: flex;
+    @include bp(tablet-big){
+        width: 100%;
+    }
+    @include bp(mobile){
+        height: auto;
+        flex-direction: column-reverse;
+        width: 80%;
+        align-items: center ;
+        border-radius: 2.8rem 2.8rem 0 0;
+    }
+    &-left{
+        background-image: url(../img/Image7.png);
+        background-size: 36rem;
+        background-repeat: no-repeat;
+        background-position: -11rem 2rem;
+        height: 100%;
+        width: 40%;
+        @include bp(mobile){
+            height: 19rem;
+            width: 100%;
+            background-position: 1rem 1rem;
+            background-size: 27rem;
+        }
+    }
+    &-right{
+        width: 60%;
+        margin-top: 5.7rem;
+        @include bp(mobile){
+         width: 100%;    
+         padding-left: 2rem; 
+         margin-top: 2rem;
+        }
+        &-title{
+            padding-bottom:4rem ;
+            font-family: 'Mark Pro Bold';
+            @include bp(mobile){
+                width: 61%;
+                font-size: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+        &-text{
+            opacity: .8;
+            line-height: 4.4rem;
+            padding-bottom:5rem ;
+            @include bp(mobile){
+                padding-bottom: 2.5rem;
+            }
+            p{
+                @include bp(mobile){
+                    font-size: 1.8rem;  
+                   }
+            }
+        }
+
+    }
+}
+.card-4{
+    width: 81.2rem;
+    height: 38rem;
+    background: transparent linear-gradient(296deg, #00B7B3 0%, #0E8F93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 3.2rem;
+    display: flex;
+    @include bp(tablet-big){
+        width: 100%;
+    }
+    @include bp(mobile){
+        height: auto;
+        flex-direction: column-reverse;
+        width: 80%;
+        align-items: center ;
+        border-radius:0 0 2.8rem 2.8rem;
+    }
+    &-left{
+        background-image: url(../img/Image7.png);
+        background-size: 36rem;
+        background-repeat: no-repeat;
+        background-position: -11rem 2rem;
+        height: 100%;
+        width: 40%;
+        @include bp(mobile){
+            height: 19rem;
+            width: 100%;
+            background-position: 1rem 1rem;
+            background-size: 27rem;
+        }
+    }
+    &-right{
+        margin-top: 5.7rem;
+        width: 65%;
+        @include bp(mobile){
+            width: 100%;    
+            padding-left: 2rem; 
+            margin-top: 2rem;
+           }
+        &-title{
+            padding-bottom:4rem ;
+            font-family: 'Mark Pro Bold';
+            @include bp(mobile){
+                width: 88%;
+                font-size: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+        &-text{
+            opacity: .8;
+            line-height: 4.4rem;
+            padding-bottom:5rem ;
+            @include bp(mobile){
+                width: 81%;
+                padding-bottom: 2.5rem;
+            }
+            p{
+                @include bp(mobile){
+                    font-size: 1.8rem;   
+                   }
+            }
+        }
+
+    }
+}
+

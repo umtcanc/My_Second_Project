@@ -1,0 +1,120 @@
+// Kullandıklarım
+  /* Font Families*/
+$font-family-base: 'Mark Pro';
+:root{
+  --font-size-title--xxxl: 6.6rem;
+  --font-size-title--xxl: 3.2rem;
+  --font-size-title--xl: 3rem;
+  --font-size-title--xmd:2.6rem;
+  --font-size-title--lg: 2.4rem;
+  --font-size-title--md: 2.2rem;
+  --font-size-title--sm: 1.9rem;
+  --font-size-title--xs: 1.8rem;
+  --font-size-title--xxs: 1.6rem;
+  --font-size-title--xxxs: 1.5rem;
+  --font-size-body: 1.6rem;
+  --footer-padding: 14rem;
+  --header-height: 14rem;
+  --container-width:156rem;
+  @media (max-width:576px){
+    --container-width: 100%;
+  }
+  @media (min-width: 576px) {
+    --container-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    --container-width: 720px;
+  }
+  @media (min-width: 992px) {
+    --container-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    --container-width: 1150px;
+  }
+  @include bp(r-laptop-s) {
+    --container-width: 150rem;
+  }
+  // 170 * 9px = 1530px -> desktop-m
+  
+  @include bp(r-desktop-m) {
+    --container-width: 164rem;
+  }
+  // @include bp(desktop-m) {
+  //   --container-width: 153rem;
+  // }
+
+}
+
+
+
+
+/* Colors */
+
+
+
+$color-background: #F6F7F9;
+$color-text: #0F2851;
+$color-title: #262752;
+$color-button-background: transparent linear-gradient(88deg, #6654EB 0%, #7176FD 100%) 0% 0% no-repeat padding-box;
+$color-button-background-hover: transparent linear-gradient(88deg, #4f41b8 0%, #5457bb 100%) 0% 0% no-repeat padding-box;
+$color-pink-gradient: transparent linear-gradient(90deg, #FE678D 0%, #F742ED 100%) 0% 0% no-repeat padding-box;
+$color-pink-gradient-hover: transparent linear-gradient(90deg, #fe8cb4 0%, #f756f7 100%) 0% 0% no-repeat padding-box;
+$color-pink: #FE678D;
+$footer-copyright-bg-color:#EBEDF2;
+$color-light-blue: #4AC8F7;
+$color-background-langs: #011633;
+$color-subtitle: #052E64;
+$color-subtext: rgba($color-subtitle, .6);
+$color-subpage-background: #F6F8FB;
+$color-grey: #959594;
+$color-text-full: #363636;
+
+$color-title-red: #EA3D3D;
+$color-background-border: #DADEE0;
+
+$color-link: #4A90E2;
+$color-border: #222;
+$color-border--focus: #8898AA;
+$color-border-light: #e8e8ec;
+$color-divider: #F7F6F4;
+
+
+$color-shadow: rgba(#32325D,.1);
+
+$color-white: #efefef;
+$color-white--soft: #fff;
+
+$color-red: #e91d22;
+$color-red--soft: #fd5150;
+$color-red--dark: #d4171b;
+
+
+
+
+$color-blue: #1b4cdd;
+$color-yellow: #efbf11;
+
+
+$color-first: $color-red;
+
+$color-form-bg: #F7F6F4;
+/* Font Sizes */
+
+
+;
+//$font-family-base: 'Roboto', sans-serif;
+
+/* Box Shadows */
+$button-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08), 0px 4px 4px rgba(50, 50, 93, 0.11);
+$button-shadow--hover: 0px 7px 14px rgba(50, 50, 93, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.08);
+
+/* Input */
+$input-br: .6rem;
+$input-padding: 1rem;
+
+/* Normal Padding */
+
+$transition: .3s cubic-bezier(.29, .13, .27, .74);
+$transition-fast: .2s cubic-bezier(.29, .13, .27, .74);
+

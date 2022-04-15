@@ -1,0 +1,45 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition-fast;
+}
+
+p {
+  margin: 0;
+}
+
+.icon-font {
+  display: inline-block;  
+  width: 4rem;
+  stroke-width: 0;
+  opacity: 1;
+  stroke: currentColor;
+  fill: currentColor;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+.scroll-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
