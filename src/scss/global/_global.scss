@@ -92,11 +92,7 @@ swiper-wrapper.visible-active {
 //   background: #fff;
 // }
 
-.swiper-wrapper{
-  @include bp(mobile){
-    transform: translate3d(0px,0,0) !important;
-  }
-}
+
 
 .overlay{
   position: fixed;
@@ -114,8 +110,4 @@ swiper-wrapper.visible-active {
     pointer-events: all;
   }
 
-}
-
-.card-swiper-item{
-  width: 70rem !important;
 }

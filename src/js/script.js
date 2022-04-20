@@ -130,6 +130,7 @@ $('.overlay').click(function (){
             320: {
                 slidesPerView: 2.1,
                 spaceBetween: 16,
+
             },
             480: {
                 slidesPerView: 2.2,
@@ -170,8 +171,9 @@ $('.overlay').click(function (){
         },    
         breakpoints: {
             320: {
-                slidesPerView: 2,
-                spaceBetween: 16,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: true,
             },
             480: {
                 slidesPerView: 2,
@@ -186,8 +188,9 @@ $('.overlay').click(function (){
                 spaceBetween: 36,
             },
             1201: {
+                centeredSlides: true,
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 30,
             },
         }
 
@@ -202,6 +205,7 @@ $('.overlay').click(function (){
         watchSlidesProgress: true,
         loop: true,
         centeredSlides: false,
+
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,
@@ -209,7 +213,8 @@ $('.overlay').click(function (){
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                spaceBetween: 16,
+                spaceBetween: 0,
+                centeredSlides: false,
             },
             480: {
                 slidesPerView: 1.5,
@@ -224,8 +229,8 @@ $('.overlay').click(function (){
                 spaceBetween: 36,
             },
             1201: {
-                slidesPerView: 4.3,
-                spaceBetween: 30,
+                slidesPerView: 4,
+                spaceBetween: 0,
             },
         }
 

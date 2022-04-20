@@ -305,14 +305,11 @@
            width: 100% !important;
            height: 100%;
             .swiper-slide{
-                margin: 0 2rem;
-                padding: 0;
                 @include bp(mobile){
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding-right: 4rem;
                     margin:0;
                     margin-top: -10rem;
                 }
@@ -555,7 +552,7 @@
             &-item{
                 opacity: .85;
                 transition: .3s;
-                width: 50rem;
+                transform: scale(.9);
                 &:hover{
                     opacity: 1;
                 }
@@ -565,7 +562,7 @@
                 &-image{
                     img{
                         border-radius: 4rem;
-                        width: 50rem;
+                        width: 100%;
                         height: 30rem;
                         @include bp(mobile){
                             width: 30.2rem;
