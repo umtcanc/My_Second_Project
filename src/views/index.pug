@@ -12,7 +12,7 @@ block content
             .pageintro-info
                 .pageintro-info-left 
                     .pageintro-info-left-title.title--xxxl 
-                        span Alışverişte indirim geri günlerde bindirim
+                        span Alışverişte indirim 
                             br
                         span yanında param!
                     .pageintro-info-left-text.title--md 
@@ -35,7 +35,7 @@ block content
                             input.input.input--gsm(type="text" placeholder="GSM NUMARASI")
                         a(href="#").btn.btn--medium.btn--green Hemen Başla
                     .pageintro-info-left-message.title--xxxs 
-                        span Tüm çevrimiçi mağazalarda!
+                        span Tüm çevrimiçi mağazalarda! 
                     .pageintro-info-left-store 
                         a(href="") 
                             img(src="assets/img/appstore-w.svg", alt="")
@@ -68,23 +68,24 @@ block content
                     
                         
                     
-            .pagesecond-who
-                .pagesecond-who-title.title--lg 
-                    span Param Kimler İçin?
-                .pagesecond-who-text.title--xxl
-                    span Herkes için bir şeyler var, paramla mutluluk var! 
-                .swiper.whoswiper
-                    .swiper-wrapper 
-                        .swiper-slide 
-                            - var card = "card-1"
-                            include blocks/cards
-                        .swiper-slide
-                            include blocks/cards
-                        .swiper-slide  
-                            include blocks/cards
-                        .swiper-slide
-                            include blocks/cards
-                    .swiper-pagination.pagination
+        .pagesecond-who
+            .pagesecond-who-title.title--lg 
+                span Param Kimler İçin?
+            .pagesecond-who-text.title--xxl
+                span Herkes için bir şeyler var, paramla mutluluk var! 
+            .swiper.whoswiper
+                .swiper-wrapper 
+                    .swiper-slide 
+                        - var card = "card-1"
+                        include blocks/cards
+                    .swiper-slide
+                        include blocks/cards
+                    .swiper-slide  
+                        include blocks/cards
+                    .swiper-slide
+                        include blocks/cards
+                .swiper-pagination.pagination
+        .container        
             .pagesecond-accordion 
                 include blocks/accordion
             //- .pagesecond-benefits
@@ -130,47 +131,49 @@ block content
             //-                 .card-1-image
             //-             .pagesecond-benefits-right-item-content.title--md 
             //-                 span Harcadıkça Kazan
+        .container    
             .pagesecond-banner 
                 - var card = "card-2"
                 include blocks/cards
-            .pagesecond-slider  
-                .pagesecond-slider-title 
-                    span.title--lg Param ile Avantajlar
-                .pagesecond-slider-text 
-                    span.title--xl 7/24 Para transferi, 50+ işyerinde nakit iade!  
-                    .slider-navigation-icon 
-                        .card-slider-prev
-                            svg.icon.icon-font
-                                use(xlink:href='assets/icons/icons.svg#arrow')
-                        .card-slider-next
-                            svg.icon.icon-font
-                                use(xlink:href='assets/icons/icons.svg#arrow-next')
-                        
-                .swiper.mySwiper.card-swiper 
+        .pagesecond-slider  
+            .pagesecond-slider-title 
+                span.title--lg Param ile Avantajlar
+            .pagesecond-slider-text 
+                span.title--xl 7/24 Para transferi, 50+ işyerinde nakit iade!  
+                .slider-navigation-icon 
+                    .card-slider-prev
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#arrow')
+                    .card-slider-next
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#arrow-next')
                     
-                    .swiper-wrapper
-                        a(href="").swiper-slide.card-swiper-item
-                            .card-swiper-item-image
-                                img(src="assets/img/apet.png", alt="")
-                            .card-swiper-item-title 
-                                span.title--lg Boyner İndirimi 
-                            .card-swiper-item-text 
-                                span.title--xs Boyner alışverişinizin %5’i anında iade!
-                        a(href="").swiper-slide.card-swiper-item
-                            .card-swiper-item-image
-                                img(src="assets/img/apet.png", alt="")
-                            .card-swiper-item-title 
-                                span.title--lg Boyner İndirimi 
-                            .card-swiper-item-text 
-                                span.title--xs Boyner alışverişinizin %5’i anında iade!
-                        a(href="").swiper-slide.card-swiper-item
-                            .card-swiper-item-image
-                                img(src="assets/img/apet.png", alt="")
-                            .card-swiper-item-title 
-                                span.title--lg Boyner İndirimi 
-                            .card-swiper-item-text 
-                                span.title--xs Boyner alışverişinizin %5’i anında iade!
-                    .swiper-pagination.pagination            
+            .swiper.mySwiper.card-swiper 
+                
+                .swiper-wrapper
+                    a(href="").swiper-slide.card-swiper-item
+                        .card-swiper-item-image
+                            img(src="assets/img/apet.png", alt="")
+                        .card-swiper-item-title 
+                            span.title--lg Boyner İndirimi 
+                        .card-swiper-item-text 
+                            span.title--xs Boyner alışverişinizin %5’i anında iade!
+                    a(href="").swiper-slide.card-swiper-item
+                        .card-swiper-item-image
+                            img(src="assets/img/apet.png", alt="")
+                        .card-swiper-item-title 
+                            span.title--lg Boyner İndirimi 
+                        .card-swiper-item-text 
+                            span.title--xs Boyner alışverişinizin %5’i anında iade!
+                    a(href="").swiper-slide.card-swiper-item
+                        .card-swiper-item-image
+                            img(src="assets/img/apet.png", alt="")
+                        .card-swiper-item-title 
+                            span.title--lg Boyner İndirimi 
+                        .card-swiper-item-text 
+                            span.title--xs Boyner alışverişinizin %5’i anında iade!
+                .swiper-pagination.pagination        
+        .container            
             .pagesecond-cards 
                 - var card = "card-3"
                 include blocks/cards 

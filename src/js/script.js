@@ -21,25 +21,35 @@ $('.js-open-menu').click(function (){
 $('.js-open-sub-menu').click(function (){
     if($(this).hasClass('active')){
         $(this).removeClass('active');
+        $('.overlay').removeClass('active')
+        $('html, body').removeClass('scroll-disabled');
     }else{
         $('.js-open-sub-menu').removeClass('active');
         $(this).addClass('active');
+        $('.overlay').addClass('active')
+        $('html, body').addClass('scroll-disabled');
     }
     
 })
 
-// dışarı click olunca kapaması için
+$('.overlay').click(function (){
+        $('.js-open-sub-menu').removeClass('active');
+        $('.overlay').removeClass('active')
+        $('html, body').removeClass('scroll-disabled');
+    
+})
 
-// $('.js-open-sub-menu').click(function(e){
-//     if(e.target.className !== '.js-open-sub-menu'){          
-//         $(this).removeClass('active');
-//     } else if( $(this).hasClass('active')){
-//         $(this).removeClass('active');
-//     } else{
+$('.overlay').click(function (){
+    $('.langs-menu').removeClass('active')
+})
+// $('.header').click(function (){
+//     if($('.js-open-sub-menu').hasClass('active')){
 //         $('.js-open-sub-menu').removeClass('active');
-//         $(this).addClass('active')
+//         $('.overlay').removeClass('active')
+//         $('html, body').removeClass('scroll-disabled');
 //     }
-// })
+// })    
+
 
 
 
@@ -47,9 +57,7 @@ $('.js-open-sub-menu').click(function (){
     
 
 
-// $('body, html').on('click', '.js-open-sub-menu', function () {
-//     $('.js-open-sub-menu').removeClass('active');
-// });
+
 
 
 
@@ -62,6 +70,7 @@ $('.js-open-sub-menu').click(function (){
                 $('.header-content-wrapper').removeClass('desktop-menu-opened');
             } else {
                 $(this).addClass('active');
+                $('.overlay').addClass('active')
                 $('.header-content-wrapper').addClass('desktop-menu-opened');
                 $('.js-overlay--header').removeClass('active');
                 $('.js-open-account-menu,.header-account-item').removeClass('active');
@@ -119,7 +128,7 @@ $('.js-open-sub-menu').click(function (){
         centeredSlides: false,
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2.1,
                 spaceBetween: 16,
             },
             480: {
@@ -161,15 +170,15 @@ $('.js-open-sub-menu').click(function (){
         },    
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 16,
             },
             480: {
-                slidesPerView: 1.3,
+                slidesPerView: 2,
                 spaceBetween: 18,
             },
             768: {
-                slidesPerView:1.6,
+                slidesPerView: 2,
                 spaceBetween: 26,
             },
             992: {
@@ -178,7 +187,7 @@ $('.js-open-sub-menu').click(function (){
             },
             1201: {
                 slidesPerView: 3,
-                spaceBetween: 34,
+                spaceBetween: 50,
             },
         }
 
@@ -215,8 +224,8 @@ $('.js-open-sub-menu').click(function (){
                 spaceBetween: 36,
             },
             1201: {
-                slidesPerView: 4,
-                spaceBetween: 50,
+                slidesPerView: 4.3,
+                spaceBetween: 30,
             },
         }
 
@@ -243,7 +252,7 @@ $('.js-open-sub-menu').click(function (){
     
     $(window).scroll(function() {
         var height = $(window).scrollTop();
-        var accordionheight =$('.pagesecond-accordion').offset().top;
+        var accordionheight =$('.pagesecond-accordion').offset().top - 1000;
         if(height >= accordionheight) {
             $( ".accordion-banner-item" ).first().click()
         };

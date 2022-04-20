@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 87vh;
+    height: 90vh;
     @include bp(tablet-big){
         height: 122vh;
         border-radius: 0%;
@@ -14,7 +14,7 @@
     } 
     @include bp(mobile){
         border-radius: 0%;
-        height: 112vh;
+        height: 87vh;
         background-image: none;
     } 
     &-info{
@@ -87,6 +87,7 @@
                 @include bp(mobile){
                     width: 40%;
                     text-align: center;
+                    margin-left: 2rem   ;
                 }
             }
             
@@ -113,7 +114,7 @@
                         position: relative;
                         &:nth-child(1){
                             top:-8.5rem;
-                            right: -8rem;
+                            right: -10.5rem;
                         }
                         &:nth-child(2){
                             display: none;
@@ -135,6 +136,7 @@
             position: relative;
             @include bp(tablet-big){
                 width: 100%;
+                top: -14.5rem;
             }
         
             @include bp(mobile){
@@ -148,11 +150,14 @@
                 width: 54rem;
                 height: 65rem;
                 position: absolute;
-                top: -15%;
-                left: 8rem;
+                top: -8%;
+                left: 5%;
                 
                 // box-shadow: -20px -18px 10px 10px #370865 inset;
-                
+                @include bp(laptop-l){
+                    left: 1%;
+                    top: -10%;
+                }
                 @include bp(tablet-big){
                     position: absolute;
                     background-size: 40rem;
@@ -161,26 +166,29 @@
                 }
                 @include bp(mobile){
                     position: absolute;
-                    left: -10rem;
-                    margin-top: -31.8rem;
+                    left: -13rem;
+                    top: -59.4%;
                     height: 65rem;
-                    width: 35.9rem;
                     background-position: 7rem 40rem;
+                    transform: scale(.8);
                 }
             }
             .phone2{
                 position: absolute;
                 right: 13%;
                 top: -28%;
-                
+                @include bp(laptop-l){
+                    transform: scale(.85);
+                    top: -35%;
+                }
                 
                 @include bp(tablet-big){
                     left: 7rem;
-                    top: -18rem;
+                    top: -10rem;
                 }
                 @include bp(mobile){
-                    left: -2rem;
-                    top: -28rem;
+                    left: 6rem;
+                    top: 0rem;
                 }
                 img{
                     transform: scale(.9);
@@ -188,7 +196,7 @@
                         transform: scale(.9);
                     }
                     @include bp(mobile){
-                        transform: scale(.5);
+                        height: 60rem;
                     }
                 }
             }
@@ -198,9 +206,9 @@
                 right: -5%;
                
                 @include bp(tablet-big){
-                    right: -1rem;
+                    right: 1rem;
                     transform: scale(.9);
-                    margin-top: -2rem;
+                    margin-top: 8rem;
                 }
                 @include bp(mobile){
                     display: none;
@@ -224,9 +232,18 @@
         margin-bottom: 20rem;
         padding-bottom: 10rem;
         border-bottom: 1px solid rgba($color: gray, $alpha: .2);
+
         @include bp(tablet-big){
             margin-top: 8rem;
             margin-bottom: 10rem;
+        }
+        @include bp(mobile){
+            margin: 4rem 0;
+            top: -15rem;
+            background-image: linear-gradient(white, white);
+            height: 15rem;
+            position: relative;
+            top: -5rem;
         }
          
         .swiper{
@@ -236,7 +253,7 @@
                 align-items: center;
                 img{
                     display: block;
-                    
+                    margin-top: 4rem;
                 }
             }
         }
@@ -255,21 +272,27 @@
         
         &-title{
             margin-bottom: 1.4rem;
+            @include bp(tablet-big){
+                margin: 1rem 2rem;
+            }
+            @include bp(tablet-big){
+                margin: -1rem 3.5rem;
+            }
             span{
                 font-family: 'Mark Pro Bold';
                 color: #450E87;
                 @include bp(mobile){
-                    margin-left: 3.6rem;
                 }
             }
         }
         &-text{
             margin-bottom: 6.6rem;
             @include bp(tablet-big){
-                width: 80%;
+                margin: 2rem auto 5rem auto;
             }
             @include bp(mobile){
-                margin-left: 3.6rem;
+               margin:2rem 0 0 3.5rem;
+                width: 70%;
             }
             span{
                 color: #7D8E9F;
@@ -282,7 +305,7 @@
            width: 100% !important;
            height: 100%;
             .swiper-slide{
-                margin: 0;
+                margin: 0 2rem;
                 padding: 0;
                 @include bp(mobile){
                     width: 100%;
@@ -290,16 +313,19 @@
                     align-items: center;
                     justify-content: center;
                     padding-right: 4rem;
+                    margin:0;
+                    margin-top: -10rem;
                 }
                 .card-1{
-                    width: auto;
+                    width: 35rem;
                     height: auto;
                     padding-bottom: 9rem;
                     padding-top: 7rem;
                     @include bp(mobile){
-                        width: 30rem;
+                        width: 25rem;
                         padding: 3rem;
                         height: 35rem;
+                        margin-top: 3rem;
                     }
                 }
             }
@@ -322,6 +348,7 @@
                 }
                 @include bp(mobile){
                     display: flex;
+                    margin-top: -15rem;
                 }
             }
         } 
@@ -460,6 +487,8 @@
         }
         &-title{
             padding-bottom: 2rem;
+            width: var(--container-width);
+            margin: 0 auto;
             span{
                 color: #450E87;
                 font-family: 'Mark Pro Bold';
@@ -474,6 +503,8 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
+            width: var(--container-width);
+            margin: 0 auto;
             .slider-navigation-icon{
                 display: flex;
                 justify-content: center;
@@ -524,6 +555,7 @@
             &-item{
                 opacity: .85;
                 transition: .3s;
+                width: 50rem;
                 &:hover{
                     opacity: 1;
                 }
@@ -533,7 +565,7 @@
                 &-image{
                     img{
                         border-radius: 4rem;
-                        width: 100%;
+                        width: 50rem;
                         height: 30rem;
                         @include bp(mobile){
                             width: 30.2rem;
@@ -705,4 +737,11 @@
     height: .5rem;
     background-color: #00B7B3;
     animation: animationBar 10s;
+  }
+
+  .berkeamk{
+    font-size: 5rem;
+    width: 15rem;
+    background-color: red;
+    color: white;
   }

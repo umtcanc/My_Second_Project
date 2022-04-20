@@ -5,7 +5,9 @@
         margin: 5rem 0;
     }
     @include bp(mobile){
-        margin: 10rem 0;
+        margin: -8rem 0;
+        width: 106%;
+        margin-left: 2rem;
     }
 
 }
@@ -20,7 +22,6 @@
             margin-bottom: 2rem;
         }
         @include bp(mobile){
-            margin-left: 3.6rem ;
         }
         &-title{
             margin-bottom: 2.2rem;
@@ -58,7 +59,6 @@
             width: 100%;
         }
         @include bp(mobile){
-            margin-left: 3.6rem;
         }
         .arkaplan{
             width: 37.2rem;
@@ -113,21 +113,19 @@
                 border-radius: 2rem;
                 margin-bottom: 1rem;
                 &::before{
-                    content: '\002B';
+                    content: '+';
                     color: #450E87;
                     font-weight: bold;
-                    font-size: 3.6rem;
+                    font-size: 3.8rem;
                     position: relative;
                     float: right;
                     margin-right: 2rem;
                     width:4rem;
                     height:4rem;
                     border-radius: 1rem;
+                    padding-bottom: .8rem;
                     background:#fff;
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-                    
+                    text-align: center;
                 }
             }
 
@@ -152,7 +150,7 @@
                 }
                 @include bp(mobile){
                     border: none;
-                    height: 38rem;
+                    height: 52.8rem;
                     &::before{
                         content: "\2212";
                         background:#00B7B3;
@@ -170,6 +168,9 @@
                             width:  5rem;
                             height: 5rem;
                             filter: opacity(1);
+                            @include bp(mobile){
+                                margin-top: -8rem;
+                            }
                             img{
                                 width: 100%;
                                 height: 100%;
@@ -177,7 +178,9 @@
                         }
                         &-title{
                             margin-left: 3rem;
+                        
                             h2{
+                                transition: 1s ease;
                                 color: #3D2852;
                                 font-size: 2.4rem;
                                 font-family: 'Mark Pro Bold';
@@ -187,6 +190,7 @@
 
                             }
                             span{
+                                transition: 1s ease;
                                 margin-top: 1rem;
                                 font-size: 1.8rem;
                                 color: #7D8E9F;
@@ -227,6 +231,8 @@
                     width:  3.5rem;
                     height: 3.5rem;
                     filter:opacity(.1);
+                    transition: .3s;
+                    margin-left: 2rem;
                     img{
                         width: 100%;
                         height: 100%;
@@ -238,17 +244,20 @@
                     h2{
                         font-family: 'Mark Pro';
                         color: #7D8E9F;
+                        transition: .3s ease;
                         @include bp(mobile){
                             width: 60%;
-                            @include bp(mobile){
-                                font-size: 1.6rem;
-                            }
+                            transition: none;
                         }
                     }
                     span{
+                        transition: .3s ease;
                         display: none;
                         @include bp(mobile){
-                            width: 80%;
+                            width: 100%;
+                            line-height: 3rem;
+                            transition: none;
+                            margin-left: -4rem;
                         }
                     }
 
@@ -268,8 +277,8 @@
                 }
                 @include bp(mobile){
                     position: relative;
-                    left: -1%;
-                    top: 2.5rem;
+                    left: -7.5%;
+                    top: 0.5rem;
                     transition: none;
                 }
                 img{
@@ -280,8 +289,8 @@
                         object-position: top;
                     }
                     @include bp(mobile){
-                        width: 30rem;
-                        height: 20rem;
+                        width: 35rem;
+                        height: 37rem;
                         object-fit: cover;
                         object-position: top;
                     }

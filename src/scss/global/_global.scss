@@ -97,3 +97,25 @@ swiper-wrapper.visible-active {
     transform: translate3d(0px,0,0) !important;
   }
 }
+
+.overlay{
+  position: fixed;
+  transition: .3s ease;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  top:0;
+  left: 0;
+  opacity: 0;
+  background: #101820;
+  z-index: 98;
+  &.active{
+    opacity: .2;
+    pointer-events: all;
+  }
+
+}
+
+.card-swiper-item{
+  width: 70rem !important;
+}

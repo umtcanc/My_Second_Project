@@ -21,7 +21,7 @@ html(lang="tr")
                     navbar.navbar 
                         .navbar-left 
                             .dropdown 
-                                button.dropdown-btn.title--xs.js-open-sub-menu Bireysel
+                                button#myDropdown.dropdown-btn.title--xs.js-open-sub-menu  Bireysel
                                 .dropdown-content
                                     .dropdown-content-top 
                                         .dropdown-content-top-left 
@@ -245,6 +245,7 @@ html(lang="tr")
 
         // İçerik Bitiş
         block footer
+            .overlay
             footer.footer
                 .container
                     .footer-header
