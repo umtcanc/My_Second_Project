@@ -38,6 +38,14 @@ html {
 .container {
   max-width: var(--container-width);
 }
+.containers{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include bp(mobile){
+    margin-top: -4rem;
+  }
+}
 
 a{
   text-decoration: none;
@@ -105,9 +113,38 @@ swiper-wrapper.visible-active {
   opacity: 0;
   background: #101820;
   z-index: 98;
+  @include bp(mobile){
+    z-index: 1;
+  }
   &.active{
     opacity: .2;
     pointer-events: all;
   }
 
+}
+.swiper-margin{
+  margin-left: 11rem;
+  @include bp(desktop-l){
+    margin-left: 8rem;
+
+  }
+  @include bp(mobile){
+    margin-left: -1.2rem;
+  }
+}
+// .swiper-margin2{
+//   margin-left: 15rem;
+//   @include bp(desktop-l){
+//     margin-left: 10.5rem;
+
+//   }
+//   @include bp(tablet){
+//     margin-left: 0;
+//   }
+//   @include bp(mobile){
+//     margin-left: -1.2rem;
+//   }
+// }
+.border-bottom{
+  border-bottom: 1px solid rgba($color: gray, $alpha: .2);
 }

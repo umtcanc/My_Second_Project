@@ -7,18 +7,96 @@
     background-size: cover;
     background-position: center;
     height: 90vh;
+    position: relative;
+    
     @include bp(tablet-big){
-        height: 122vh;
+        height: auto;
+        min-height: 116rem;
         border-radius: 0%;
         background-image: none;
     } 
+   
+    
     @include bp(mobile){
         border-radius: 0%;
-        height: 87vh;
+        height: auto;
+        min-height: 74rem;
         background-image: none;
+        position: relative;
     } 
+    
+    
+    .container{
+        position: relative;
+        padding-top: 33rem;
+        @include bp(laptop-l){
+            padding-top: 26rem;
+        }
+        @include bp(desktop-l){
+            padding-top: 24rem;
+        }
+        @include bp(tablet){
+            padding: 0;
+        }
+        
+    }
+    .phones{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        left: auto;
+        display: flex;
+        align-items: flex-end;
+        @include  bp(desktop-l){
+            transform: scale(.8);
+            bottom: -7rem;
+        }
+        @include bp(desktop-m){
+            transform: scale(.7);
+            bottom: -12rem;
+            right: -15rem;
+        }
+        @include bp(laptop){
+            transform: scale(.6);
+            right: -32rem;
+            bottom: -19rem;
+        }
+       
+        @include bp(tablet){
+            left: auto;
+            transform: scale(.6);
+            right: -10rem;
+            bottom: -13.2rem;
+        }
+        @include bp(tablet-air){
+            right: -6rem;
+            bottom: -13rem;
+        }
+        @include bp(mobile){
+            transform: scale(.45);
+            bottom: -18rem;
+            left: 0;
+            right: 25rem;
+        }
+        .phone_1{
+            transform: translate(14rem, 0);   
+            @include bp(mobile){
+                transform: translate(4rem, 0);
+            }         
+        }
+        .phone2{
+            transform: translate(0,3rem) scale(1.1);
+        }
+        .creditcard{
+            transform: translate(-4rem, -20rem);
+            @include bp(mobile){
+                display: none;
+            }
+        }
+        
+    }
     &-info{
-        padding-top: 33rem; 
         display: flex;
         position: relative;
 
@@ -27,8 +105,9 @@
            padding-top: 28.2rem;
         }
         @include bp(mobile){
+            position: relative;
             flex-direction: column;
-            padding-top: 10.2rem;
+            padding-top: 9.2rem;
             
             
         }
@@ -36,7 +115,7 @@
             width: 40%;
             @include bp(tablet-big){
                 width: 100%;
-                
+                text-align: center;
             }
             @include bp(mobile){
                 width: 100%;
@@ -48,9 +127,10 @@
                 color: #fff;
                 margin-bottom: 2.8rem;  
                 @include bp(mobile){
-                    font-size: 2.8rem;
+                    font-size: 2.4rem;
                     line-height: 3rem;
                     text-align: center;
+                    margin-bottom: 2.3rem;
                 }
                 span{
                     &:nth-child(2){
@@ -63,9 +143,9 @@
                 opacity: .6;
                 margin-bottom: 6rem;
                 @include bp(mobile){
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     text-align: center;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2.5rem;
                 }
             }
             &-start{
@@ -77,6 +157,7 @@
                     flex-direction: column;
                     text-align: center;
                     justify-content: center;
+                    margin-bottom: 3rem;
                 }
                 
                 
@@ -87,7 +168,9 @@
                 @include bp(mobile){
                     width: 40%;
                     text-align: center;
-                    margin-left: 2rem   ;
+                    font-size: 1.4rem;
+                    margin-left: 1rem;
+                    margin-top: 0rem;
                 }
             }
             
@@ -106,15 +189,15 @@
                     height: auto;
                     background-color: rgba($color: #1B0A38, $alpha: .8);
                     color: #fff;
-                    border-radius: 2rem;
+                    border-radius: 1.5rem;
                     margin-right: 3rem;
-                    padding: 2rem;
+                    padding: 2rem 2.5rem;
                    
                     @include bp(mobile){
                         position: relative;
                         &:nth-child(1){
                             top:-8.5rem;
-                            right: -10.5rem;
+                            right: -8.7rem;
                         }
                         &:nth-child(2){
                             display: none;
@@ -130,120 +213,53 @@
                 
             }
         }
-        &-right{
-            width: 60%;
-            display: flex;
-            position: relative;
-            @include bp(tablet-big){
-                width: 100%;
-                top: -14.5rem;
-            }
         
-            @include bp(mobile){
-                height: 38rem;
-            }
-            .phone1{
-                background-image: url(../img/phone1.png);
-                background-repeat: no-repeat;
-                background-position: 0 6rem;
-                transform: scale(.9);
-                width: 54rem;
-                height: 65rem;
-                position: absolute;
-                top: -8%;
-                left: 5%;
-                
-                // box-shadow: -20px -18px 10px 10px #370865 inset;
-                @include bp(laptop-l){
-                    left: 1%;
-                    top: -10%;
-                }
-                @include bp(tablet-big){
-                    position: absolute;
-                    background-size: 40rem;
-                    left: -10%;
-                    background-position: 0 7rem;
-                }
-                @include bp(mobile){
-                    position: absolute;
-                    left: -13rem;
-                    top: -59.4%;
-                    height: 65rem;
-                    background-position: 7rem 40rem;
-                    transform: scale(.8);
-                }
-            }
-            .phone2{
-                position: absolute;
-                right: 13%;
-                top: -28%;
-                @include bp(laptop-l){
-                    transform: scale(.85);
-                    top: -35%;
-                }
-                
-                @include bp(tablet-big){
-                    left: 7rem;
-                    top: -10rem;
-                }
-                @include bp(mobile){
-                    left: 6rem;
-                    top: 0rem;
-                }
-                img{
-                    transform: scale(.9);
-                    @include bp(tablet-big){
-                        transform: scale(.9);
-                    }
-                    @include bp(mobile){
-                        height: 60rem;
-                    }
-                }
-            }
-            .creditcard{
-                position: absolute;
-                left: auto;
-                right: -5%;
-               
-                @include bp(tablet-big){
-                    right: 1rem;
-                    transform: scale(.9);
-                    margin-top: 8rem;
-                }
-                @include bp(mobile){
-                    display: none;
-                }
-            }
-        }
+        
     }
 }
 
     
 .pagesecond{
     padding-top: 20rem;
-   
     height: auto;
+    .linear{
+        display: none;
+        @include bp(mobile){
+            display: block;
+            width: 100%;
+            height: 10rem;
+            margin-top: -5rem;
+            position: relative;
+            background: linear-gradient(3turn, #fff, #fff, transparent);
+        }
+    }
+    @include bp(tablet){
+        padding-top: 7rem;
+    }
     @include bp(mobile){
         background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF95 22%, #FFFFFF 55%, #FFFFFF 89%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
         padding-top: 10rem;
     }
     &-marka{
-        width: 100%;
-        margin-bottom: 20rem;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
         padding-bottom: 10rem;
-        border-bottom: 1px solid rgba($color: gray, $alpha: .2);
 
         @include bp(tablet-big){
             margin-top: 8rem;
             margin-bottom: 10rem;
+            width: 100%;
+            margin-left: 0;
+            padding-bottom: 0rem;
         }
         @include bp(mobile){
-            margin: 4rem 0;
-            top: -15rem;
-            background-image: linear-gradient(white, white);
-            height: 15rem;
-            position: relative;
+            margin: 4rem 0 0;
             top: -5rem;
+            background-image: linear-gradient(white, white);
+            position: relative;
         }
          
         .swiper{
@@ -263,11 +279,13 @@
         flex-direction: column;
         align-items: center;
         height: 70rem;
+        margin-top: 10rem;
         @include bp(tablet-big){
             align-items: baseline;
         }
         @include bp(mobile){
             align-items: baseline;
+            margin-top: 5rem;
         }
         
         &-title{
@@ -281,21 +299,27 @@
             span{
                 font-family: 'Mark Pro Bold';
                 color: #450E87;
+                
                 @include bp(mobile){
+                    font-size: 2rem;
                 }
             }
         }
         &-text{
             margin-bottom: 6.6rem;
             @include bp(tablet-big){
-                margin: 2rem auto 5rem auto;
+                margin: 2rem 0 5rem 3.5rem;
+                font-size: 28px;
             }
             @include bp(mobile){
-               margin:2rem 0 0 3.5rem;
+               margin:2rem 0 3rem 3.5rem;
                 width: 70%;
+                font-size: 2.2rem;
+                line-height: 3rem;
             }
             span{
                 color: #7D8E9F;
+                
                 @include bp(mobile){
                     font-size: 2.2rem;
                 }
@@ -304,6 +328,10 @@
        .whoswiper{
            width: 100% !important;
            height: 100%;
+           padding-top: 1rem;
+           @include bp(mobile){
+               padding-top: 10rem;
+           }
             .swiper-slide{
                 @include bp(mobile){
                     width: 100%;
@@ -313,18 +341,7 @@
                     margin:0;
                     margin-top: -10rem;
                 }
-                .card-1{
-                    width: 35rem;
-                    height: auto;
-                    padding-bottom: 9rem;
-                    padding-top: 7rem;
-                    @include bp(mobile){
-                        width: 25rem;
-                        padding: 3rem;
-                        height: 35rem;
-                        margin-top: 3rem;
-                    }
-                }
+                
             }
             .swiper-pagination-bullet {
                 width: 1rem;
@@ -345,7 +362,7 @@
                 }
                 @include bp(mobile){
                     display: flex;
-                    margin-top: -15rem;
+                    margin-top: -6rem;
                 }
             }
         } 
@@ -459,9 +476,12 @@
 
     }
     &-banner{
-        margin: 25rem 0;
+        margin-bottom: 15rem;
         display: flex;
         justify-content: center;
+        @include bp(tablet){
+            margin-top: 15rem;
+        }
         @include bp(mobile){
             border-top: 1px solid rgba($color: #1B0A38, $alpha: .1);
             padding-top: 15rem;
@@ -478,14 +498,19 @@
         }
         
     }
+
     &-slider{
-        @include bp(mobile){
-            margin-left: 3.6rem;
+        &-banner{
+            width: var(--container-width);
+            margin: 0 auto;
         }
         &-title{
             padding-bottom: 2rem;
             width: var(--container-width);
             margin: 0 auto;
+            @include bp(mobile){
+                margin-left: 3.5rem;
+            }
             span{
                 color: #450E87;
                 font-family: 'Mark Pro Bold';
@@ -502,6 +527,9 @@
             position: relative;
             width: var(--container-width);
             margin: 0 auto;
+            @include bp(mobile){
+                margin-left: 3.5rem;
+            }
             .slider-navigation-icon{
                 display: flex;
                 justify-content: center;
@@ -550,9 +578,8 @@
                 }
             }
             &-item{
-                opacity: .85;
+                opacity: .855;
                 transition: .3s;
-                transform: scale(.9);
                 &:hover{
                     opacity: 1;
                 }
@@ -560,10 +587,14 @@
                     opacity: 1;
                 }
                 &-image{
+                    width: 100%;
+                    height: 31rem;
+                    border-radius: 4rem;
+                    overflow: hidden;
                     img{
-                        border-radius: 4rem;
                         width: 100%;
-                        height: 30rem;
+                        height: 100%;
+                        object-fit: cover;
                         @include bp(mobile){
                             width: 30.2rem;
                             height: 19.3rem;
@@ -601,13 +632,14 @@
         }
         @include bp(mobile){
             flex-direction: column;
-            margin-top: 9rem;
+            margin-top: 6rem;
         }
         .card-3{
-            
+            margin-right: 2rem;
             background: transparent linear-gradient(58deg, #370865 0%, #450E87 100%) 0% 0% no-repeat padding-box;
             @include bp(tablet-big){
                 margin-bottom: 2rem;
+                margin-right: -.2rem;
             }
             @include bp(mobile){
                 margin-bottom: 0;
@@ -627,6 +659,10 @@
     height: 70rem;
     display: flex;
     align-items: center;
+    @include bp(mobile){
+        margin-top: -46.2rem;
+        padding: 60rem 0 30rem 0;
+    }
 
    &-footer{
     display: flex;
@@ -637,18 +673,29 @@
     &-image{
         width: 33rem;
         height: 33rem;
+        @include bp(laptop-l){
+            margin-top: -5rem;
+        }
         @include bp(mobile){
             display: none;
         }
     }
     &-content{
         padding-left: 5.5rem;
+        @include bp(laptop-l){
+            margin-left: 12rem;
+        }
+        @include bp(tablet){
+            padding: 0;
+            margin-left: 2rem;
+        }
         @include bp(mobile){
             padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 0;
         }
         &-title{
             color: #450E87;
@@ -661,6 +708,7 @@
                 font-family: 'Mark Pro Bold';
                 @include bp(mobile){
                     font-size: 2rem;
+                    line-height: 3rem;
                 }
             }
         }
@@ -668,17 +716,19 @@
             color: #7D8E9F;
             padding-bottom: 5.3rem;
             @include bp(tablet-big){
-                padding-bottom: 2rem;
+                padding-bottom: 3rem;
             }
             @include bp(mobile){
                 text-align: center;
                 padding-left: 3.5rem;
                 padding-right: 3.5rem;
+        
                 
             }
             span{
                 @include bp(mobile){
                     font-size: 2.2rem;
+                    line-height: 3rem;
                 }
             }
         }

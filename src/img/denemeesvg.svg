@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.036958, 0, 0, 1.036958, -300.875702, -555.27533)" style="">
+    <g transform="translate(291.549 779.552)">
+      <g transform="translate(0 1.5)">
+        <g transform="translate(36.5 11)">
+          <g>
+            <g>
+              <g>
+                <defs>
+                  <path id="path-1" d="M-34.6-251.3h22.3c1,0,1.9,0.8,1.9,1.9v14.9c0,1-0.8,1.9-1.9,1.9l0,0h-22.3c-1,0-1.8-0.8-1.8-1.9 v-14.9C-36.5-250.5-35.7-251.3-34.6-251.3z"/>
+                </defs>
+                <clipPath id="clip-1">
+                  <path d="M-34.6-251.3h22.3c1,0,1.9,0.8,1.9,1.9v14.9c0,1-0.8,1.9-1.9,1.9l0,0h-22.3c-1,0-1.8-0.8-1.8-1.9 v-14.9C-36.5-250.5-35.7-251.3-34.6-251.3z" transform="matrix(1, 0, 0, 1, 0, 0)" style="overflow: visible;"/>
+                </clipPath>
+                <g id="g-1" style="clip-path: url(#clip-1);">
+                  <rect id="rect-1" x="-41.1" y="-255.9" class="st1" width="35.3" height="27.9" style="fill: rgb(255, 255, 255);"/>
+                  <rect id="rect-2" x="-41.1" y="-255.9" class="st2" width="35.3" height="27.9" style="fill: rgb(37, 55, 115);"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <g>
+                <defs>
+                  <path id="path-2" d="M-26.6-251.3v5.7l-8.4-5.7 c-0.9,0.2-1.5,0.9-1.5,1.8v0.2l6.2,4.2h-6.2v6.2h6.2l-6.2,4.2v0.2c0,0.9,0.6,1.6,1.5,1.8l8.4-5.7v5.7h6.2v-5.7l8.4,5.7 c0.9-0.2,1.5-0.9,1.5-1.8v-0.2l-6.2-4.2h6.2v-6.2h-6.2l6.2-4.2v-0.2c0-0.9-0.6-1.6-1.5-1.8l-8.4,5.7v-5.7L-26.6-251.3 L-26.6-251.3z"/>
+                </defs>
+                <clipPath id="clip-2">
+                  <path d="M-26.6-251.3v5.7l-8.4-5.7 c-0.9,0.2-1.5,0.9-1.5,1.8v0.2l6.2,4.2h-6.2v6.2h6.2l-6.2,4.2v0.2c0,0.9,0.6,1.6,1.5,1.8l8.4-5.7v5.7h6.2v-5.7l8.4,5.7 c0.9-0.2,1.5-0.9,1.5-1.8v-0.2l-6.2-4.2h6.2v-6.2h-6.2l6.2-4.2v-0.2c0-0.9-0.6-1.6-1.5-1.8l-8.4,5.7v-5.7L-26.6-251.3 L-26.6-251.3z" transform="matrix(1, 0, 0, 1, 0, 0)" style="overflow: visible;"/>
+                </clipPath>
+                <g style="clip-path: url(#clip-2);">
+                  <rect x="-43.7" y="-257.7" class="st1" width="40.5" height="31.4" style="fill: rgb(255, 255, 255);"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="g-2">
+            <g>
+              <g>
+                <defs>
+                  <path id="path-3" d="M-34.6-251.3h22.3c1,0,1.9,0.8,1.9,1.9v14.9 c0,1-0.8,1.9-1.9,1.9l0,0h-22.3c-1,0-1.8-0.8-1.8-1.9v-14.9C-36.5-250.5-35.7-251.3-34.6-251.3z"/>
+                </defs>
+                <clipPath id="clip-3">
+                  <path d="M-34.6-251.3h22.3c1,0,1.9,0.8,1.9,1.9v14.9 c0,1-0.8,1.9-1.9,1.9l0,0h-22.3c-1,0-1.8-0.8-1.8-1.9v-14.9C-36.5-250.5-35.7-251.3-34.6-251.3z" transform="matrix(1, 0, 0, 1, 0, 0)" style="overflow: visible;"/>
+                </clipPath>
+                <g id="g-3" style="clip-path: url(#clip-3);">
+                  <line id="line-1" class="st5" x1="-19.1" y1="-245.4" x2="-7.4" y2="-253.1" style="fill: none; stroke: rgb(208, 18, 42); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0.667px;"/>
+                  <line id="line-2" class="st5" x1="-17.9" y1="-238.6" x2="-7.4" y2="-231.5" style="fill: none; stroke: rgb(208, 18, 42); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0.667px;"/>
+                  <line id="line-3" class="st5" x1="-29.1" y1="-245.4" x2="-40.1" y2="-252.8" style="fill: none; stroke: rgb(208, 18, 42); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0.667px;"/>
+                  <line id="line-4" class="st5" x1="-27.9" y1="-238.7" x2="-40.1" y2="-230.6" style="fill: none; stroke: rgb(208, 18, 42); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0.667px;"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <g>
+                <defs>
+                  <polygon id="polygon-1" points="-25.3,-251.3 -25.3,-243.9 -36.5,-243.9 &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;-36.5,-240.1 -25.3,-240.1 -25.3,-232.7 -21.6,-232.7 -21.6,-240.1 -10.5,-240.1 -10.5,-243.9 -21.6,-243.9 -21.6,-251.3 &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"/>
+                </defs>
+                <clipPath id="clip-4">
+                  <polygon points="-25.3,-251.3 -25.3,-243.9 -36.5,-243.9 &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;-36.5,-240.1 -25.3,-240.1 -25.3,-232.7 -21.6,-232.7 -21.6,-240.1 -10.5,-240.1 -10.5,-243.9 -21.6,-243.9 -21.6,-251.3 &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" transform="matrix(1, 0, 0, 1, 0, 0)" style="overflow: visible;"/>
+                </clipPath>
+                <g style="clip-path: url(#clip-4);">
+                  <rect x="-41.1" y="-255.9" class="st7" width="35.3" height="27.9" style="fill: rgb(220, 12, 49);"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

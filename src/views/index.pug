@@ -41,15 +41,19 @@ block content
                             img(src="assets/img/appstore-w.svg", alt="")
                         a(href="")
                             img(src="assets/img/gp-w.svg", alt="")
-                .pageintro-info-right 
-                    .phone1  
-                    .phone2   
-                        img(src="assets/img/phone2.png", alt="")
-                    .creditcard 
-                        img(src="assets/img/creditcard.png", alt="")
+        .phones                
+            .phone_1 
+                img(src="assets/img/phone11.png", alt="")
+            .phone2   
+                img(src="assets/img/deneme.png", alt="")
+            .creditcard 
+                img(src="assets/img/creditcard.png", alt="")
+
+
                         
     section.pagesecond 
-        .container
+        .linear
+        .containers.border-bottom
             .pagesecond-marka 
                 .swiper.mySwiper.main-swiper 
                     .swiper-wrapper
@@ -74,7 +78,7 @@ block content
             .pagesecond-who-text.title--xxl
                 span Herkes için bir şeyler var, paramla mutluluk var! 
             .swiper.whoswiper
-                .swiper-wrapper 
+                .swiper-wrapper.swiper-margin 
                     .swiper-slide 
                         - var card = "card-1"
                         include blocks/cards
@@ -147,32 +151,32 @@ block content
                     .card-slider-next
                         svg.icon.icon-font
                             use(xlink:href='assets/icons/icons.svg#arrow-next')
+            .pagesecond-slider-banner        
+                .swiper.mySwiper.card-swiper 
                     
-            .swiper.mySwiper.card-swiper 
-                
-                .swiper-wrapper
-                    a(href="").swiper-slide.card-swiper-item
-                        .card-swiper-item-image
-                            img(src="assets/img/apet.png", alt="")
-                        .card-swiper-item-title 
-                            span.title--lg Boyner İndirimi 
-                        .card-swiper-item-text 
-                            span.title--xs Boyner alışverişinizin %5’i anında iade!
-                    a(href="").swiper-slide.card-swiper-item
-                        .card-swiper-item-image
-                            img(src="assets/img/apet.png", alt="")
-                        .card-swiper-item-title 
-                            span.title--lg Boyner İndirimi 
-                        .card-swiper-item-text 
-                            span.title--xs Boyner alışverişinizin %5’i anında iade!
-                    a(href="").swiper-slide.card-swiper-item
-                        .card-swiper-item-image
-                            img(src="assets/img/apet.png", alt="")
-                        .card-swiper-item-title 
-                            span.title--lg Boyner İndirimi 
-                        .card-swiper-item-text 
-                            span.title--xs Boyner alışverişinizin %5’i anında iade!
-                .swiper-pagination.pagination        
+                    .swiper-wrapper.swiper-margin2
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                        a(href="").swiper-slide.card-swiper-item
+                            .card-swiper-item-image
+                                img(src="assets/img/apet.png", alt="")
+                            .card-swiper-item-title 
+                                span.title--lg Boyner İndirimi 
+                            .card-swiper-item-text 
+                                span.title--xs Boyner alışverişinizin %5’i anında iade!
+                    .swiper-pagination.pagination        
         .container            
             .pagesecond-cards 
                 - var card = "card-3"

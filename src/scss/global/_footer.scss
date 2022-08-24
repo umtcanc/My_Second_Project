@@ -20,6 +20,17 @@
     align-items: center;
     border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
     height: 12rem;
+    &::after{
+      content: '';
+      width: 16rem;
+      top: 11.8rem;
+      height: .2rem;
+      background-color: #00B7B3;
+      position: absolute;
+      @include bp(tablet-big){
+        display: none;
+      }
+    }
     @include bp(mobile){
       align-items: center;
       border-bottom: none;

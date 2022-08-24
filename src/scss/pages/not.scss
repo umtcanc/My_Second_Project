@@ -1,0 +1,188 @@
+// // &-right{
+// //   width: 60%;
+// //   display: flex;
+// //   position: relative;
+// //   @include bp(tablet-big){
+// //       width: 100%;
+// //       top: -14.5rem;
+// //   }
+
+// //   @include bp(mobile){
+// //       height: 38rem;
+// //   }
+// //   .phone1{
+// //       background-image: url(../img/phone1.png);
+// //       background-repeat: no-repeat;
+// //       background-position: 0 6rem;
+// //       transform: scale(.9);
+// //       width: 54rem;
+// //       height: 65rem;
+// //       position: absolute;
+// //       top: -8%;
+// //       left: 5%;
+      
+// //       box-shadow: -20px -18px 10px 10px #370865 inset;
+// //       @include bp(laptop-l){
+// //           left: 1%;
+// //           top: -10%;
+// //       }
+// //       @include bp(tablet-big){
+// //           position: absolute;
+// //           background-size: 40rem;
+// //           left: -10%;
+// //           background-position: 0 7rem;
+// //       }
+// //       @include bp(mobile){
+// //           position: absolute;
+// //           left: -13rem;
+// //           top: -59.4%;
+// //           height: 65rem;
+// //           background-position: 7rem 40rem;
+// //           transform: scale(.8);
+// //           display: none;
+// //       }
+// //   }
+// //   .phone_1{
+// //       display: none;
+      
+// //       @include bp(mobile){
+// //           display: flex;
+// //           position: absolute;
+// //           top: auto;
+// //           bottom: 16rem;
+// //           height: 5rem;
+// //           img{
+// //               object-fit:cover ;
+// //               height: 40rem;
+// //           }
+// //       }
+// //   }
+// //   .phone2{
+// //       position: absolute;
+// //       right: 13%;
+// //       top: -28%;
+// //       @include bp(laptop-l){
+// //           transform: scale(.85);
+// //           top: -35%;
+// //       }
+      
+// //       @include bp(tablet-big){
+// //           left: 7rem;
+// //           top: -10rem;
+// //       }
+// //       @include bp(mobile){
+// //           left: 20%;
+// //           top: 15%;
+// //           bottom: auto;
+// //           transform: scale(1);
+// //       }
+// //       img{
+// //           transform: scale(.9);
+// //           @include bp(tablet-big){
+// //               transform: scale(.9);
+// //           }
+// //           @include bp(mobile){
+// //               height: 60rem;
+// //           }
+// //       }
+// //   }
+// //   .creditcard{
+// //       position: absolute;
+// //       left: auto;
+// //       right: -5%;
+     
+// //       @include bp(tablet-big){
+// //           right: 1rem;
+// //           transform: scale(.9);
+// //           margin-top: 8rem;
+// //       }
+// //       @include bp(mobile){
+// //           display: none;
+// //       }
+// //   }
+// // }
+
+// // / phoneee
+
+// .phone_1{
+//   position: absolute;
+//   top: auto;
+//   bottom: 0;
+//   right: 20%;
+//   img{
+//       transform: scale(.9);
+//   }
+//   @include bp(laptop-l){
+//       right: 15%;
+//       bottom: -43rem;
+//       img{
+//           transform: scale(.8);
+//       }
+//   }
+//   @include bp(tablet){
+//       bottom: -86.1%;
+//       top: auto;
+//       right: 35%;
+//       img{
+//           transform: scale(.7);
+//       }
+//   }
+//   @include bp(mobile){
+//       right: 1rem;
+//       top: 28.4rem;
+//       bottom: auto;
+//       img{
+//           transform: scale(.55);
+//       }
+//   }
+// }
+// .phone2{
+//   position: absolute;
+//   top: auto;
+//   bottom: 0%;
+//   right: 9%;
+//   left: auto;
+//   img{
+//       transform: scale(.9);
+//   }
+//   @include bp(laptop-l){
+//       right: 7rem;
+//       bottom: -25rem;
+//       img{
+//           transform: scale(.8);
+//       }
+//   }
+//   @include bp(tablet){
+//       bottom: -75%;
+//       right: 2rem;
+//       img{
+//           transform: scale(.75);
+//       }
+//   }
+//   @include bp(mobile){
+//       top: 22rem;
+//       bottom: auto;
+//       right: -10rem;
+//       img{
+//           transform: scale(.6);                    
+//       }
+//   }
+// }
+// .creditcard{
+//   position: absolute;
+//   right: -3%;
+//   left: auto;
+//   margin-top: -2rem;
+//   bottom: auto;
+//   top: auto;
+//   @include bp(laptop-l){
+//       right: -10rem;
+//       margin-top: -8rem;
+//       img{
+//           transform: scale(.8);
+//       }
+//   }
+//   @include bp(tablet){
+//       display: none;
+//   }
+// }

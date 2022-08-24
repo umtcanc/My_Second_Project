@@ -3,6 +3,7 @@
 .card-1{
     cursor: pointer;
     height: 44.3rem;
+    width: 28rem;
     background: rgba($color: #F6F6FB, $alpha: .4);
     border:1px solid #ABA3B7;
     border-radius: 3.2rem;
@@ -12,6 +13,9 @@
     justify-content: center;
     padding-left: 4rem;
     padding-right: 4rem;
+    @include bp(laptop-l){
+        width: 25rem;
+    }
     @include bp(mobile){
         width: 30rem;
     }
@@ -37,7 +41,6 @@
     &-text{
         color: #7D8E9F;
         opacity: .8;
-        width: 80%;
     }
     &:hover{
         background-color: #FBFBFD;
@@ -240,9 +243,12 @@
     &-right{
         width: 60%;
         margin-top: 5.7rem;
+        @include bp(laptop-l){
+            width: 70%;
+        }
         @include bp(mobile){
          width: 100%;    
-         padding-left: 2rem; 
+         padding-left: 3rem; 
          margin-top: 2rem;
         }
         &-title{
@@ -252,6 +258,9 @@
                 width: 61%;
                 font-size: 2rem;
                 padding-bottom: 2rem;
+                p{
+                    line-height: 3.5rem;
+                }
             }
         }
         &-text{
@@ -264,6 +273,7 @@
             p{
                 @include bp(mobile){
                     font-size: 1.8rem;  
+                    line-height: 2.2rem;
                    }
             }
         }
@@ -293,6 +303,7 @@
         background-position: -11rem 2rem;
         height: 100%;
         width: 40%;
+        border-radius: 3rem;
         @include bp(mobile){
             height: 19rem;
             width: 100%;
@@ -303,9 +314,12 @@
     &-right{
         margin-top: 5.7rem;
         width: 65%;
+        @include bp(laptop-l){
+            width: 70%;
+        }
         @include bp(mobile){
             width: 100%;    
-            padding-left: 2rem; 
+            padding-left: 3rem; 
             margin-top: 2rem;
            }
         &-title{
@@ -315,6 +329,10 @@
                 width: 88%;
                 font-size: 2rem;
                 padding-bottom: 2rem;
+                padding-top: 1.5rem;
+                p{
+                    line-height: 3.5rem;
+                }
             }
         }
         &-text{
@@ -328,6 +346,7 @@
             p{
                 @include bp(mobile){
                     font-size: 1.8rem;   
+                    line-height: 2.2rem;
                    }
             }
         }
